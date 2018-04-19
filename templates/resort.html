@@ -1,0 +1,142 @@
+<div id="resort-view" class="page" ng-controller="ResortController" ng-init="init(resort)"
+     hm-swipe-left="nextResort($root.config.ANIMATION_RIGHT_TO_LEFT)"
+     hm-swipe-right="previousResort($root.config.ANIMATION_LEFT_TO_RIGHT)"
+     hm-swipe-down="showRegionList($root.config.ANIMATION_UP_TO_DOWN)" ng-cloak>
+    <div class="header">
+        <div class="pull-right"><span ng-style="{color: region.color}">{{region.title}}</span> <span>|</span> <span><b>{{subRegion.title}}</b></span>
+        </div>
+    </div>
+    <hr>
+    <div id="header" ng-show="!showingLocalInfo">
+        <div id="offline-prompt" ng-show="$root.showOfflinePrompt && !online">
+            <div class="pull-left">YOU ARE VIEWING THE OFFLINE EDITION. PLEASE CONNECT TO THE WEB TO GET THE LATEST
+                INFO.
+            </div>
+            <div class="pull-right" ng-click="$root.showOfflinePrompt = false">
+                <div><span>GOT IT</span> <img src="images/close.png"></div>
+            </div>
+        </div>
+        <div id="info-button" ng-show="hasLocalInfo && online"><span>Current Time,<br>Weather and More</span> <a
+                ng-click="showLocalInfo()"><img src="images/plus.png"></a></div>
+        <div class="title-bar">
+            <div id="title-bar-text" class="pull-left">
+                <table>
+                    <tr>
+                        <td style="vertical-align: top" ng-if="isPointResort"><img class="blue-dot">
+                        <td><span ng-bind-html="title"></span><span class="resort-id">{{resortId}}</span>
+                    <tr>
+                        <td ng-if="isPointResort">
+                        <td>
+                            <div><img ng-if="!!strataIcon" ng-src="{{$root.baseUrl + 'images/rci/' + strataIcon}}"> <img
+                                    ng-if="!!allInclusiveIcon"
+                                    ng-src="{{$root.baseUrl + 'images/rci/' + allInclusiveIcon}}"></div>
+                </table>
+            </div>
+            <div class="pull-right circle" ng-style="{backgroundColor: region.color}" ng-hide="!online"
+                 style="text-align:middle"><a href="#" ng-click="showAvailability(resort.resortId)"> TAP TO CHECK
+                AVAILABILITY<br> <img src="images/hand.png"> </a></div>
+        </div>
+        <hr>
+    </div>
+    <div id="local-info" ng-show="showingLocalInfo">
+        <div id="readings">
+            <div id="time" style="position:relative">
+                <div style="padding-top:10px"><h1>Local Time:</h1>
+                    <div class="time">{{localTime|date:'shortTime'}}</div>
+                    <div class="date">{{localTime|date:'longDate'}}</div>
+                </div>
+                <img src="images/close.png" style="position:absolute;right:10px;top:10px" ng-click="hideLocalInfo()">
+            </div>
+            <div id="weather"> <!--    local weather   -->
+                <div class="column"><h1>Local Weather:</h1>
+                    <div class="weather">
+                        <div style="height:45px" ng-if="localWeather.current"><img
+                                ng-src="images/weather/{{localWeather.current.icon}}.png"
+                                ng-error="onLoadWeatherIconError($event)"></div>
+                        <div class="temp" ng-if="localWeather.current">
+                            <div class="reading">{{localWeather.current.temperature|number:0}}&deg;F</div>
+                        </div>
+                    </div>
+                </div> <!--    average temps  -->
+                <div class="column"><h1>7-Day Forecast:</h1>
+                    <div class="weather weekly">
+                        <div ng-repeat="forecast in localWeather.forecast.data" ng-if="!$first"><h1>
+                            {{forecast.time*1000|date:'EEE':localWeather.timezone}}</h1>
+                            <div style="height:20px"><img ng-src="images/weather/{{forecast.icon}}.png"
+                                                          ng-error="onLoadWeatherIconError($event)"></div>
+                            <div class="reading"><span class="high">{{forecast.temperatureMax|number:0}}&deg;</span>
+                                <span class="low">{{forecast.temperatureMin|number:0}}&deg;</span></div>
+                        </div>
+                    </div>
+                </div> <!--    share   -->
+                <div class="column">
+                    <div class="circle" ng-style="{backgroundColor: region.color}" ng-hide="!online"
+                         style="text-align:middle;margin:10% auto"><a href="#"
+                                                                      ng-click="showAvailability(resort.resortId)"> TAP
+                        TO CHECK AVAILABILITY<br> <img src="images/hand.png"> </a></div> <!--
+                    <div class="social-links">
+                        <h1>Share this Resort:</h1>
+                        <div>
+                            <div><img src="images/share/facebook.png"></div>
+                            <div><img src="images/share/twitter.png"></div>
+                            <div><img src="images/share/pinterest.png"></div>
+                            <div><img src="images/share/email.png"></div>
+                        </div>
+                    </div>
+                    <div class="availability" style="height:40%">
+                        <div>
+                            <a href="#" ng-click="showAvailability(resort.resortId)"><img src="images/info.png" style="vertical-align:middle"></a>
+                            <a href="#" ng-click="showAvailability(resort.resortId)">Check Availability</a>
+                        </div>
+                    </div>
+                    --> </div>
+            </div>
+        </div>
+        <div id="map" class="map" ng-if="resortCoords">
+            <div map map-center="resortCoords" attractions="localAttractions" events="localEvents"
+                 focus="(tab==$root.config.RESORT_TAB_AREA_EVENTS?'event':'attraction')" fit-to-markers="true"
+                 resorts="resorts" use-rci-icon-for-resorts="true"
+                 on-select-attraction="selectAttractionMapMarker(data)"
+                 on-select-event="selectEventMapMarker(data)"></div>
+        </div>
+    </div>
+    <div id="tab-nav">
+        <div><a ng-class="{active: tab == $root.config.RESORT_TAB_OVERVIEW}"
+                ng-click="showTab($root.config.RESORT_TAB_OVERVIEW)">OVERVIEW</a></div>
+        <div><a ng-class="{active: tab == $root.config.RESORT_TAB_ROOM_DETAIL}"
+                ng-click="showTab($root.config.RESORT_TAB_ROOM_DETAIL)">ROOM DETAILS</a></div>
+        <div><a ng-class="{active: tab == $root.config.RESORT_TAB_RESORT_DETAIL}"
+                ng-click="showTab($root.config.RESORT_TAB_RESORT_DETAIL)">RESORT DETAILS</a></div>
+        <div><a ng-class="{active: tab == $root.config.RESORT_TAB_AMENITIES}"
+                ng-click="showTab($root.config.RESORT_TAB_AMENITIES)">AMENITIES</a></div>
+        <div><a ng-class="{active: tab == $root.config.RESORT_TAB_AREA_INFO}"
+                ng-click="showTab($root.config.RESORT_TAB_AREA_INFO)">AREA INFO</a></div>
+        <div><a ng-class="{active: tab == $root.config.RESORT_TAB_AREA_EVENTS}"
+                ng-click="showTab($root.config.RESORT_TAB_AREA_EVENTS)">EVENTS</a></div>
+    </div>
+    <div id="nav-content" ontouchmove="onTouchMove(event)"
+         ng-style="{'height': (720 - ($root.showOfflinePrompt && !online ? 40 : 0) - (showingLocalInfo ? 450 : 0)) + 'px'}">
+        <ng-include src="$root.baseUrl + 'templates/' + tab + '.html'"></ng-include>
+    </div>
+    <div id="overlay"
+         style="position:absolute;z-index:1;left:0px;top:0px;right:0px;bottom:0px;background-color:rgba(255,255,255,.8)"
+         ng-if="showOverlay && !helpOverlayShown" ng-style="{top:($root.showOfflinePrompt && !online)?'40px':'0px'}">
+        <img id="info-name" src="images/help/help-overlay.png"> <img id="info-local"
+                                                                     src="images/help/help-overlay-info.png"
+                                                                     ng-if="hasLocalInfo && online"> <img
+            id="info-availability" src="images/help/help-overlay-availability.png" ng-if="online"> <img id="info-tv"
+                                                                                                        src="images/help/help-overlay-tv.png"
+                                                                                                        ng-if="hasRCI">
+        <div id="info-close-session"><a href="#" ng-click="closeOverlay()"><img src="images/help/close-session.png"></a>
+        </div>
+        <div id="info-close"><a href="#" ng-click="closeOverlay(true)"><img src="images/help/close.png"></a></div>
+    </div>
+</div>
+<div class="nav-left-bar" ng-style="{backgroundImage: 'url(images/page-left-black.png)', backgroundRepeat: 'repeat-y'}"
+     ng-if="showPreviousResort"></div>
+<div class="nav-left-bar" ng-style="{backgroundColor: region.color}" ng-if="!showPreviousResort"></div>
+<div class="nav-right-bar"
+     ng-style="{backgroundImage: 'url(images/page-right-black.png)', backgroundRepeat: 'repeat-y'}"
+     ng-if="showNextResort"></div>
+<div class="nav-right-bar" ng-style="{backgroundColor: region.color}" ng-if="!showNextResort"></div> <img
+        class="menu-button" src="images/menu.png" ng-click="$root.showMenu = true" ng-show="!$root.showMenu">

@@ -1,0 +1,689 @@
+{
+  "results": [
+    {
+      "resortId": "0304",
+      "name": "Heritage Resorts Marbesa Club",
+      "id": "g5J2LUlNeZ",
+      "location": {}
+    },
+    {
+      "resortId": "0697",
+      "name": "El Capistrano Playa",
+      "id": "xHfpw2XGyA",
+      "location": {}
+    },
+    {
+      "resortId": "0700",
+      "name": "El Capistrano Village",
+      "id": "e1GUDh81nv",
+      "location": {}
+    },
+    {
+      "resortId": "0931",
+      "name": "Hotel Guadalmar",
+      "id": "KAyvtaCuDJ",
+      "location": {}
+    },
+    {
+      "resortId": "1340",
+      "name": "Jardines del Puerto",
+      "id": "GsMLhJkf4V",
+      "location": {}
+    },
+    {
+      "resortId": "1370",
+      "name": "Pueblo Evita Club",
+      "id": "fBiZe8cBtO",
+      "location": {}
+    },
+    {
+      "resortId": "1388",
+      "name": "Club Los Pinares",
+      "id": "ntRkRTiHvT",
+      "location": {}
+    },
+    {
+      "resortId": "1409",
+      "name": "CLC Marina del Sol",
+      "id": "po5CUK1NEY",
+      "location": {}
+    },
+    {
+      "resortId": "1460",
+      "name": "CLC Benal Beach",
+      "id": "swFnADFQV9",
+      "location": {}
+    },
+    {
+      "resortId": "1462",
+      "name": "Alfaz  Paradise Club",
+      "id": "6oFt8g5TKG",
+      "location": {}
+    },
+    {
+      "resortId": "1464",
+      "name": "Club Bena Vista",
+      "id": "blQ0ZDrwex",
+      "location": {}
+    },
+    {
+      "resortId": "1469",
+      "name": "Sunset Beach Club",
+      "id": "rYlgxGjavH",
+      "location": {}
+    },
+    {
+      "resortId": "1518",
+      "name": "Macdonald Leila Playa Resort",
+      "id": "xkr9SHjpQq",
+      "location": {}
+    },
+    {
+      "resortId": "1559",
+      "name": "Crown Resorts at Club La Riviera",
+      "id": "dDXkxMc6tm",
+      "location": {}
+    },
+    {
+      "resortId": "1689",
+      "name": "Macdonald Do\u00f1a Lola Resort",
+      "id": "zJhXwjJFFe",
+      "location": {}
+    },
+    {
+      "resortId": "1847",
+      "name": "Macdonald Villacana Resort",
+      "id": "tPGsCaE1bN",
+      "location": {}
+    },
+    {
+      "resortId": "1867",
+      "name": "Heritage Resorts at Matchroom",
+      "id": "1z7TAbW3fC",
+      "location": {}
+    },
+    {
+      "resortId": "1878",
+      "name": "Crown Resorts at Club Calahonda",
+      "id": "iLQXSVQArx",
+      "location": {}
+    },
+    {
+      "resortId": "1979",
+      "name": "Los Amigos Beach Club Playamarina",
+      "id": "tcMcg6WIz1",
+      "location": {}
+    },
+    {
+      "resortId": "1987",
+      "name": "Sahara Sunset Club",
+      "id": "UeCnl3Nr0v",
+      "location": {}
+    },
+    {
+      "resortId": "1990",
+      "name": "Royal Oasis Club at Benal Beach",
+      "id": "dIAnS2hU4h",
+      "location": {}
+    },
+    {
+      "resortId": "2210",
+      "name": "Club Oasis at El Capistrano",
+      "id": "U0Pt6jLdzF",
+      "location": {}
+    },
+    {
+      "resortId": "2221",
+      "name": "Club Playa Flores",
+      "id": "VzPhMeqiA5",
+      "location": {}
+    },
+    {
+      "resortId": "2222",
+      "name": "Torrenueva Park",
+      "id": "2H3k5UYay7",
+      "location": {}
+    },
+    {
+      "resortId": "2404",
+      "name": "Crown Resorts at Club Marbella",
+      "id": "owIri39pJa",
+      "location": {}
+    },
+    {
+      "resortId": "2423",
+      "name": "Royal Oasis Club at Pueblo Quinta",
+      "id": "rsQF7W7WU5",
+      "location": {}
+    },
+    {
+      "resortId": "2430",
+      "name": "CLC Marina Park",
+      "id": "NBUol1aAaT",
+      "location": {}
+    },
+    {
+      "resortId": "2431",
+      "name": "Club Bellasol",
+      "id": "YPJnmsBCPx",
+      "location": {}
+    },
+    {
+      "resortId": "2536",
+      "name": "La Casona de Vidiago",
+      "id": "ctFM0c0lLK",
+      "location": {}
+    },
+    {
+      "resortId": "2587",
+      "name": "Bah\u00eda Azul",
+      "id": "NTKLOTfMt5",
+      "location": {}
+    },
+    {
+      "resortId": "2742",
+      "name": "Port de Rei",
+      "id": "pPspTBOpYD",
+      "location": {}
+    },
+    {
+      "resortId": "2744",
+      "name": "Club Ciudadela",
+      "id": "j9hc9Aajy9",
+      "location": {}
+    },
+    {
+      "resortId": "2803",
+      "name": "Flamingo Benidorm",
+      "id": "LIfS21FxCY",
+      "location": {}
+    },
+    {
+      "resortId": "2818",
+      "name": "Somni de Cambrils",
+      "id": "hp8mJLAfGN",
+      "location": {}
+    },
+    {
+      "resortId": "2827",
+      "name": "Albir Garden",
+      "id": "jcbwjQWBWr",
+      "location": {}
+    },
+    {
+      "resortId": "2836",
+      "name": "Ses Fontanellas Plaza",
+      "id": "qYXTs8umsO",
+      "location": {}
+    },
+    {
+      "resortId": "2847",
+      "name": "Apartamentos el Cano",
+      "id": "gxxNjMmOpZ",
+      "location": {}
+    },
+    {
+      "resortId": "2848",
+      "name": "Habitat Playa Romana",
+      "id": "0dGFpbdZZI",
+      "location": {}
+    },
+    {
+      "resortId": "2928",
+      "name": "Ona Ogisaka Garden",
+      "id": "CJsqi38VPA",
+      "location": {}
+    },
+    {
+      "resortId": "2930",
+      "name": "Mar y Golf",
+      "id": "1eRUDLVpLd",
+      "location": {}
+    },
+    {
+      "resortId": "2947",
+      "name": "Garden Lago",
+      "id": "6C3RFCe6Nm",
+      "location": {}
+    },
+    {
+      "resortId": "2948",
+      "name": "Ona Riviera",
+      "id": "msRd48DnlP",
+      "location": {}
+    },
+    {
+      "resortId": "2953",
+      "name": "CLC Marina Dorada",
+      "id": "U1XPnPgY67",
+      "location": {}
+    },
+    {
+      "resortId": "2965",
+      "name": "Crown Resorts at Club Caronte",
+      "id": "TV8NGjxrEl",
+      "location": {}
+    },
+    {
+      "resortId": "2970",
+      "name": "Acuasol",
+      "id": "UZkBoVgCAL",
+      "location": {}
+    },
+    {
+      "resortId": "2973",
+      "name": "Miraflores Beach and Country Club",
+      "id": "5sRGcagk9t",
+      "location": {}
+    },
+    {
+      "resortId": "3052",
+      "name": "Jardines del Plaza",
+      "id": "jpeUlgxisz",
+      "location": {}
+    },
+    {
+      "resortId": "3053",
+      "name": "Parque Denia Club",
+      "id": "bFMP5Dl58O",
+      "location": {}
+    },
+    {
+      "resortId": "3088",
+      "name": "La Quinta at La Manga Club",
+      "id": "vlTWejQKpE",
+      "location": {}
+    },
+    {
+      "resortId": "3106",
+      "name": "Sol Neu",
+      "id": "IqskGk3RCR",
+      "location": {}
+    },
+    {
+      "resortId": "3220",
+      "name": "CLC Sierra Marina",
+      "id": "13tMz2ZSV3",
+      "location": {}
+    },
+    {
+      "resortId": "3556",
+      "name": "Holiday Club Calahonda",
+      "id": "9lJUB2aJ2G",
+      "location": {}
+    },
+    {
+      "resortId": "3569",
+      "name": "La Ermita",
+      "id": "r3qNvFJs4H",
+      "location": {}
+    },
+    {
+      "resortId": "3583",
+      "name": "Elite Apartments at Pueblo Evita",
+      "id": "W3XHqeK01O",
+      "location": {}
+    },
+    {
+      "resortId": "3599",
+      "name": "CLC Las Farolas Royale",
+      "id": "vc41oMxgd9",
+      "location": {}
+    },
+    {
+      "resortId": "3700",
+      "name": "Royal Gardens at Sunset Beach Club",
+      "id": "8Sax9XWh2f",
+      "location": {}
+    },
+    {
+      "resortId": "3709",
+      "name": "Multipropiedad Baqueira",
+      "id": "Y47cDtI0QE",
+      "location": {}
+    },
+    {
+      "resortId": "3710",
+      "name": "Imperial Park Country Club",
+      "id": "qYwIUrCpZD",
+      "location": {}
+    },
+    {
+      "resortId": "3732",
+      "name": "CLC Castillo del Rey",
+      "id": "gY49ibDvYS",
+      "location": {}
+    },
+    {
+      "resortId": "3733",
+      "name": "CLC Marina del Rey",
+      "id": "bLmzH0Qyz3",
+      "location": {}
+    },
+    {
+      "resortId": "3815",
+      "name": "Sierra Nevada Sports Club",
+      "id": "lIFIWtGdvu",
+      "location": {}
+    },
+    {
+      "resortId": "3828",
+      "name": "Ona Cala de Mar",
+      "id": "q9hPsaq9GO",
+      "location": {}
+    },
+    {
+      "resortId": "3902",
+      "name": "Ona Club Novelty",
+      "id": "rAOwmDUqcC",
+      "location": {}
+    },
+    {
+      "resortId": "4401",
+      "name": "La Dorada Club Internacional",
+      "id": "N2V7DTDB0P",
+      "location": {}
+    },
+    {
+      "resortId": "4850",
+      "name": "CLC World San Diego Suites\/California Beach",
+      "id": "LNu4jS1Vg7",
+      "location": {}
+    },
+    {
+      "resortId": "5326",
+      "name": "Pe\u00f1\u00edscola Plaza",
+      "id": "HazyhTWJNZ",
+      "location": {}
+    },
+    {
+      "resortId": "6672",
+      "name": "WIVC Villacana",
+      "id": "exfvhR7sVt",
+      "location": {}
+    },
+    {
+      "resortId": "6763",
+      "name": "ATL Home Dep @ Club Playa Flores",
+      "id": "TC7ZiQ1hxS",
+      "location": {}
+    },
+    {
+      "resortId": "7761",
+      "name": "DVC @ Miraflores Beach&Country Club",
+      "id": "mK5rjcoIQV",
+      "location": {}
+    },
+    {
+      "resortId": "7762",
+      "name": "DVC @ Jard\u00ednes del Puerto",
+      "id": "o4aOpSH93C",
+      "location": {}
+    },
+    {
+      "resortId": "7794",
+      "name": "DVC @ Club Bellasol",
+      "id": "yT1bqgpuMO",
+      "location": {}
+    },
+    {
+      "resortId": "8634",
+      "name": "Club Meli\u00e1 at Meli\u00e1 Marbella Banus",
+      "id": "O86HEudi6L",
+      "location": {}
+    },
+    {
+      "resortId": "A697",
+      "name": "PLG @ Pueblo Evita Club",
+      "id": "Tf2h0L0xwa",
+      "location": {}
+    },
+    {
+      "resortId": "A800",
+      "name": "PLG@ Elite Apts at Pueblo Evita",
+      "id": "FxWmIfac8G",
+      "location": {}
+    },
+    {
+      "resortId": "C206",
+      "name": "Montemar Natura Resort",
+      "id": "bsVEFTP0yq",
+      "location": {}
+    },
+    {
+      "resortId": "C646",
+      "name": "Alanda Club Marbella",
+      "id": "ufpyH7QROa",
+      "location": {}
+    },
+    {
+      "resortId": "C824",
+      "name": "Aroma @ Club Marbella",
+      "id": "4YtVWUziHZ",
+      "location": {}
+    },
+    {
+      "resortId": "C867",
+      "name": "Aroma @ Club Calahonda",
+      "id": "2VowSAggIJ",
+      "location": {}
+    },
+    {
+      "resortId": "C875",
+      "name": "Aroma @ Club Playa Flores",
+      "id": "b0jl53I7Wl",
+      "location": {}
+    },
+    {
+      "resortId": "C876",
+      "name": "Aroma @ Club Algaida",
+      "id": "8sJOCE35Dc",
+      "location": {}
+    },
+    {
+      "resortId": "D797",
+      "name": "PHC@Miraflores Beach & Country Club",
+      "id": "iHkQVQfW5t",
+      "location": {}
+    },
+    {
+      "resortId": "R772",
+      "name": "Peniscola Plaza - AD & MP",
+      "id": "VRsqqme3vQ",
+      "location": {}
+    },
+    {
+      "resortId": "1056",
+      "name": "Miraflores Vacation Club",
+      "id": "ax5Zgpp6g9",
+      "location": {}
+    },
+    {
+      "resortId": "1213",
+      "name": "Las Mimosas Beach Club",
+      "id": "3XWdIVZkC6",
+      "location": {}
+    },
+    {
+      "resortId": "1418",
+      "name": "Torrent Bay Club",
+      "id": "wVwHlN3pLt",
+      "location": {}
+    },
+    {
+      "resortId": "1513",
+      "name": "Crown Resorts at Club Delta Mar",
+      "id": "7fRLyzf62Y",
+      "location": {}
+    },
+    {
+      "resortId": "1592",
+      "name": "Heritage Resorts Mi Jard\u00edn",
+      "id": "3Hk0in0nL7",
+      "location": {}
+    },
+    {
+      "resortId": "1748",
+      "name": "Royal Aloha Spain\/RAVC",
+      "id": "SCC6C9zUEZ",
+      "location": {}
+    },
+    {
+      "resortId": "1866",
+      "name": "Club Calida at La Manga",
+      "id": "vUjPTvAtsz",
+      "location": {}
+    },
+    {
+      "resortId": "2441",
+      "name": "Club Atlas Nou Espai 1",
+      "id": "Z4yfOzF337",
+      "location": {}
+    },
+    {
+      "resortId": "2541",
+      "name": "Jard\u00ednes de la Hacienda",
+      "id": "rLNBurE8td",
+      "location": {}
+    },
+    {
+      "resortId": "2579",
+      "name": "Estival Park",
+      "id": "iyCyRnG5Ww",
+      "location": {}
+    },
+    {
+      "resortId": "2589",
+      "name": "Ona Campanario",
+      "id": "BIrf8fAiR5",
+      "location": {}
+    },
+    {
+      "resortId": "2597",
+      "name": "Aldea Bonsai",
+      "id": "S0WV1H0zJH",
+      "location": {}
+    },
+    {
+      "resortId": "2722",
+      "name": "Medina del Zoco",
+      "id": "P8SNc99LyA",
+      "location": {}
+    },
+    {
+      "resortId": "2727",
+      "name": "Las Terrazas de Cala Codolar",
+      "id": "osMYlrdIJo",
+      "location": {}
+    },
+    {
+      "resortId": "2821",
+      "name": "Ona Aucanada",
+      "id": "JdoAa28zrl",
+      "location": {}
+    },
+    {
+      "resortId": "2943",
+      "name": "Urbanizaci\u00f3n San Fernando",
+      "id": "bXkrzRGEcn",
+      "location": {}
+    },
+    {
+      "resortId": "2967",
+      "name": "Ona Cala Pi Club",
+      "id": "OCe2VHUtYj",
+      "location": {}
+    },
+    {
+      "resortId": "2974",
+      "name": "Onagrup Club Zarzas",
+      "id": "ZMe9nBZzYh",
+      "location": {}
+    },
+    {
+      "resortId": "3051",
+      "name": "Ona Jardines Paraisol",
+      "id": "nF3nYEzy43",
+      "location": {}
+    },
+    {
+      "resortId": "3091",
+      "name": "Infiniti Beach Resort",
+      "id": "mHWhw2tvIT",
+      "location": {}
+    },
+    {
+      "resortId": "3833",
+      "name": "The Grangefield Oasis Club",
+      "id": "CtSMS64vQz",
+      "location": {}
+    },
+    {
+      "resortId": "3919",
+      "name": "Cal Rei de Tallo",
+      "id": "uYsefja1SO",
+      "location": {}
+    },
+    {
+      "resortId": "4183",
+      "name": "Marina Palace",
+      "id": "MzHyidOlSR",
+      "location": {}
+    },
+    {
+      "resortId": "4192",
+      "name": "CLC Oliva Beach Club",
+      "id": "b6fGhicrKj",
+      "location": {}
+    },
+    {
+      "resortId": "4803",
+      "name": "Heritage Resorts Club Playa Real",
+      "id": "uFh8L8vlgA",
+      "location": {}
+    },
+    {
+      "resortId": "5201",
+      "name": "Apartamentos Pueblo Quinta Dos",
+      "id": "JHUctH8pCX",
+      "location": {}
+    },
+    {
+      "resortId": "6889",
+      "name": "Miraflores Rancho Club",
+      "id": "vmvdOfxdkG",
+      "location": {}
+    },
+    {
+      "resortId": "7768",
+      "name": "Ona Marina Arpon",
+      "id": "6u6WAUocCG",
+      "location": {}
+    },
+    {
+      "resortId": "8486",
+      "name": "Ona Aldea Del Mar",
+      "id": "GU6GDyT2cZ",
+      "location": {}
+    },
+    {
+      "resortId": "C868",
+      "name": "Aroma @ Club Delta Mar",
+      "id": "VDD1lYt9R8",
+      "location": {}
+    },
+    {
+      "resortId": "D792",
+      "name": "Country Club Ibipozo",
+      "id": "q3N1lLjMaX",
+      "location": {}
+    },
+    {
+      "resortId": "C879",
+      "name": "Intercorp Fractional Property",
+      "id": "KlSaaV2A8V",
+      "location": {}
+    }
+  ],
+  "count": 114
+}

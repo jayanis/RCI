@@ -1,0 +1,899 @@
+{
+  "results": [
+    {
+      "resortId": "0112",
+      "name": "Palm Court",
+      "id": "UBNVZVZMyz",
+      "location": {}
+    },
+    {
+      "resortId": "0168",
+      "name": "Cedar Lake Country Resort",
+      "id": "SoDADcq8g5",
+      "location": {}
+    },
+    {
+      "resortId": "0825",
+      "name": "Bayview Apartments",
+      "id": "W0fXlJHk3l",
+      "location": {}
+    },
+    {
+      "resortId": "0827",
+      "name": "Mansfield Country Resort",
+      "id": "pQpfzYC7OR",
+      "location": {}
+    },
+    {
+      "resortId": "0831",
+      "name": "Manly National",
+      "id": "OTFtDFBBtP",
+      "location": {}
+    },
+    {
+      "resortId": "0832",
+      "name": "Vacation Village",
+      "id": "y6hA9SV5ut",
+      "location": {}
+    },
+    {
+      "resortId": "0833",
+      "name": "Golden Leaf",
+      "id": "baLyedyS5X",
+      "location": {}
+    },
+    {
+      "resortId": "0834",
+      "name": "Korora Bay Village",
+      "id": "C6bpbUDNbX",
+      "location": {}
+    },
+    {
+      "resortId": "0908",
+      "name": "Busselton Beach Resort",
+      "id": "2p0gzWRnI4",
+      "location": {}
+    },
+    {
+      "resortId": "0949",
+      "name": "Voyager",
+      "id": "GJLz7lF5OQ",
+      "location": {}
+    },
+    {
+      "resortId": "0952",
+      "name": "Tiki Village International",
+      "id": "4yyhRyW7TL",
+      "location": {}
+    },
+    {
+      "resortId": "0953",
+      "name": "Murray Valley Resort",
+      "id": "hfWZKn18ki",
+      "location": {}
+    },
+    {
+      "resortId": "1168",
+      "name": "Don Pancho Beach Resort",
+      "id": "4vfeTpF46h",
+      "location": {}
+    },
+    {
+      "resortId": "1171",
+      "name": "Silver Sands Resort",
+      "id": "sT3zeLa24t",
+      "location": {}
+    },
+    {
+      "resortId": "1172",
+      "name": "Lakeside Country Club",
+      "id": "hRvo4vOhn3",
+      "location": {}
+    },
+    {
+      "resortId": "1173",
+      "name": "Surfers Royale",
+      "id": "lPWqDPGanv",
+      "location": {}
+    },
+    {
+      "resortId": "1174",
+      "name": "The Moorings Resort",
+      "id": "slyuhpSnGv",
+      "location": {}
+    },
+    {
+      "resortId": "1175",
+      "name": "The Bright Resort",
+      "id": "jVUgJH40Vc",
+      "location": {}
+    },
+    {
+      "resortId": "1179",
+      "name": "Sunraysia Resort",
+      "id": "yw0fAfs8cq",
+      "location": {}
+    },
+    {
+      "resortId": "1480",
+      "name": "Island Palms",
+      "id": "byWDnhDg24",
+      "location": {}
+    },
+    {
+      "resortId": "1483",
+      "name": "Beach House Seaside Resort",
+      "id": "XfLS3BPHzr",
+      "location": {}
+    },
+    {
+      "resortId": "1486",
+      "name": "Village Resort",
+      "id": "pvTqTRI97w",
+      "location": {}
+    },
+    {
+      "resortId": "1487",
+      "name": "Capri Waters Country Club",
+      "id": "DCGv4KmTs0",
+      "location": {}
+    },
+    {
+      "resortId": "1707",
+      "name": "Golden Shores Holiday Club",
+      "id": "dtTE91L0Jl",
+      "location": {}
+    },
+    {
+      "resortId": "1726",
+      "name": "Mariner Shores Resort",
+      "id": "ff2IbR5V5R",
+      "location": {}
+    },
+    {
+      "resortId": "1731",
+      "name": "Lake Edge Resort (Vic)",
+      "id": "nzuGR2iXQo",
+      "location": {}
+    },
+    {
+      "resortId": "1803",
+      "name": "Boambee Bay Resort",
+      "id": "FIG4MPD3fj",
+      "location": {}
+    },
+    {
+      "resortId": "1808",
+      "name": "Pacific Palms",
+      "id": "3tiqYuUxAz",
+      "location": {}
+    },
+    {
+      "resortId": "1811",
+      "name": "Beachcomber International Resort",
+      "id": "qtJavcIM92",
+      "location": {}
+    },
+    {
+      "resortId": "1815",
+      "name": "Sandy Point Beach Resort",
+      "id": "aihUXekAvQ",
+      "location": {}
+    },
+    {
+      "resortId": "1816",
+      "name": "Port Pacific Resort",
+      "id": "xilMhqWqQh",
+      "location": {}
+    },
+    {
+      "resortId": "1817",
+      "name": "Riviera Beach Resort",
+      "id": "CqK32raixH",
+      "location": {}
+    },
+    {
+      "resortId": "1818",
+      "name": "Whitecliffs Beach Resort",
+      "id": "RDJm6XLDfq",
+      "location": {}
+    },
+    {
+      "resortId": "2857",
+      "name": "Marine Cove Resort",
+      "id": "fZ2dovOeXX",
+      "location": {}
+    },
+    {
+      "resortId": "3030",
+      "name": "Island Breeze Resort",
+      "id": "Z3H3qtaGKQ",
+      "location": {}
+    },
+    {
+      "resortId": "3952",
+      "name": "Seashells Beachfront Resort",
+      "id": "JSAnAu5Xs1",
+      "location": {}
+    },
+    {
+      "resortId": "3958",
+      "name": "Bellbrae Country Club",
+      "id": "YhzaiE9ioH",
+      "location": {}
+    },
+    {
+      "resortId": "5218",
+      "name": "Mango Tree Vacation Club at Calypso Plaza",
+      "id": "0Vse3sYhe8",
+      "location": {}
+    },
+    {
+      "resortId": "5221",
+      "name": "Regent Park Apartments",
+      "id": "62LoGZM2Iv",
+      "location": {}
+    },
+    {
+      "resortId": "5560",
+      "name": "WorldMark Resort Golden Beach",
+      "id": "4hzfWEOTP6",
+      "location": {}
+    },
+    {
+      "resortId": "5716",
+      "name": "Tamarind Sands",
+      "id": "x12ePatCel",
+      "location": {}
+    },
+    {
+      "resortId": "6617",
+      "name": "Classic Holidays at Sovereign Surfers Paradise",
+      "id": "yUAtHyJsTb",
+      "location": {}
+    },
+    {
+      "resortId": "6917",
+      "name": "ULTIQA @ Calypso",
+      "id": "XQZNBky9lE",
+      "location": {}
+    },
+    {
+      "resortId": "6960",
+      "name": "ULTIQA @ Australis Sovereign",
+      "id": "EYP1qAlNoq",
+      "location": {}
+    },
+    {
+      "resortId": "7673",
+      "name": "Mt Martha Valley Resort",
+      "id": "uvmYPYWQaP",
+      "location": {}
+    },
+    {
+      "resortId": "7676",
+      "name": "ULTIQA @ Village Resort",
+      "id": "kd0dPGD1dQ",
+      "location": {}
+    },
+    {
+      "resortId": "7811",
+      "name": "WorldMark Resort Cairns",
+      "id": "Z9qwSDQti6",
+      "location": {}
+    },
+    {
+      "resortId": "7820",
+      "name": "WorldMark Resort Pokolbin Hill",
+      "id": "hWNyzbJ5ab",
+      "location": {}
+    },
+    {
+      "resortId": "8726",
+      "name": "Wyndham Seven Mile Beach",
+      "id": "OqSEOY19ga",
+      "location": {}
+    },
+    {
+      "resortId": "8850",
+      "name": "Landmark Nelson Bay",
+      "id": "Wt5VF8DY2a",
+      "location": {}
+    },
+    {
+      "resortId": "A029",
+      "name": "MARLIN COVE - RENTAL",
+      "id": "n0EfUxqHLT",
+      "location": {}
+    },
+    {
+      "resortId": "A032",
+      "name": "ULTIQA @ Freshwater Point",
+      "id": "iyHXs0PFnv",
+      "location": {}
+    },
+    {
+      "resortId": "A033",
+      "name": "Swell Resort - Rental",
+      "id": "rhH3oeFzqS",
+      "location": {}
+    },
+    {
+      "resortId": "A045",
+      "name": "Noosa Keys Resort - Rental",
+      "id": "8exCOELHhT",
+      "location": {}
+    },
+    {
+      "resortId": "C012",
+      "name": "Wyndham Coffs Harbour - Treetops",
+      "id": "NwwEvwoOty",
+      "location": {}
+    },
+    {
+      "resortId": "C836",
+      "name": "ULTIQA @ Air On Broadbeach",
+      "id": "cVkfZfcGwI",
+      "location": {}
+    },
+    {
+      "resortId": "D834",
+      "name": "Wyndham Hotel Melbourne",
+      "id": "y6h0lCvKdF",
+      "location": {}
+    },
+    {
+      "resortId": "R166",
+      "name": "Tweed Ultima Holiday Apartments",
+      "id": "oe1Q0HdXbB",
+      "location": {}
+    },
+    {
+      "resortId": "R169",
+      "name": "Australis Sovereign - Rental",
+      "id": "bURFyBSUFZ",
+      "location": {}
+    },
+    {
+      "resortId": "R339",
+      "name": "Golden Riviera - Rental",
+      "id": "xosENGVF1Y",
+      "location": {}
+    },
+    {
+      "resortId": "R383",
+      "name": "Mantra on Salt Beach - Rental",
+      "id": "7ypeNE3vZ9",
+      "location": {}
+    },
+    {
+      "resortId": "R604",
+      "name": "Oaks Plaza Pier-3 Night",
+      "id": "oMCZzRa7aW",
+      "location": {}
+    },
+    {
+      "resortId": "R606",
+      "name": "Oaks Horizons -3 Night",
+      "id": "rITMZVCBDi",
+      "location": {}
+    },
+    {
+      "resortId": "R607",
+      "name": "Oaks Horizons -4 Night",
+      "id": "KPrSM9ruG5",
+      "location": {}
+    },
+    {
+      "resortId": "R783",
+      "name": "Travelodge Southbank Hotel - Rental",
+      "id": "GvsMVamDTN",
+      "location": {}
+    },
+    {
+      "resortId": "R784",
+      "name": "Travelodge Sydney Hotel - Rental",
+      "id": "KyMo8oEXia",
+      "location": {}
+    },
+    {
+      "resortId": "R935",
+      "name": "Channers on Norfolk",
+      "id": "NBGVgIy814",
+      "location": {}
+    },
+    {
+      "resortId": "R936",
+      "name": "Chifley Alice Springs-3 Night",
+      "id": "nO8C3NDz2B",
+      "location": {}
+    },
+    {
+      "resortId": "RA36",
+      "name": "MANTRA ON JOLIMONT - 5 NTS RENTAL",
+      "id": "b6oUuCQ4Qr",
+      "location": {}
+    },
+    {
+      "resortId": "RA37",
+      "name": "Mantra in the Village - Rental",
+      "id": "E1jrFdvyrt",
+      "location": {}
+    },
+    {
+      "resortId": "RA38",
+      "name": "WorldMark Resort Golden Beach",
+      "id": "cInGUnO8pn",
+      "location": {}
+    },
+    {
+      "resortId": "RA39",
+      "name": "Quality Hobart Midcity Hotel-3 Night",
+      "id": "fHqi3lr9II",
+      "location": {}
+    },
+    {
+      "resortId": "RA42",
+      "name": "Australis Sovereign-3 Night",
+      "id": "11hIV9TNPZ",
+      "location": {}
+    },
+    {
+      "resortId": "RA43",
+      "name": "Australis Sovereign-4 Night",
+      "id": "aq5WqjMN6h",
+      "location": {}
+    },
+    {
+      "resortId": "RB46",
+      "name": "PORT PACIFIC - RENTAL",
+      "id": "TKmSYZemaI",
+      "location": {}
+    },
+    {
+      "resortId": "RB50",
+      "name": "MANTRA ONE SANDY BAY ROAD - RENTAL",
+      "id": "74cAwkJtBF",
+      "location": {}
+    },
+    {
+      "resortId": "RB79",
+      "name": "5NT Mantra on The Esplanade - Rental",
+      "id": "8InkIdxne9",
+      "location": {}
+    },
+    {
+      "resortId": "0228",
+      "name": "Pacific View Resort",
+      "id": "CEYaZZjM1I",
+      "location": {}
+    },
+    {
+      "resortId": "0829",
+      "name": "Jadon Place",
+      "id": "F6TaUVds6O",
+      "location": {}
+    },
+    {
+      "resortId": "0830",
+      "name": "Kyneton Bushland Resort",
+      "id": "6yQCiJvJDh",
+      "location": {}
+    },
+    {
+      "resortId": "1036",
+      "name": "Club Noosa",
+      "id": "VqsHMDT7CX",
+      "location": {}
+    },
+    {
+      "resortId": "1169",
+      "name": "Nepean Country Club & Day Spa",
+      "id": "aPhvfKSNHu",
+      "location": {}
+    },
+    {
+      "resortId": "1375",
+      "name": "Kalbarri Beach Resort",
+      "id": "kusnWtIG8c",
+      "location": {}
+    },
+    {
+      "resortId": "4157",
+      "name": "Royal Woods Resort",
+      "id": "jOVg9DMqAs",
+      "location": {}
+    },
+    {
+      "resortId": "6136",
+      "name": "Breakfree Acapulco - Rental",
+      "id": "60LMV1Y3Qk",
+      "location": {}
+    },
+    {
+      "resortId": "6182",
+      "name": "Paradise Island Resort",
+      "id": "rxka0XzkOF",
+      "location": {}
+    },
+    {
+      "resortId": "6183",
+      "name": "Breakfree Peninsula - Rental",
+      "id": "StYNuH5Ngn",
+      "location": {}
+    },
+    {
+      "resortId": "6190",
+      "name": "BreakFree Aanuka Beach Resort",
+      "id": "t0Z0fvlGSl",
+      "location": {}
+    },
+    {
+      "resortId": "6786",
+      "name": "ULTIQA at Raffertys",
+      "id": "aJIT8I15dY",
+      "location": {}
+    },
+    {
+      "resortId": "7579",
+      "name": "Mantra Amphora - Rental",
+      "id": "mdZXK2dsin",
+      "location": {}
+    },
+    {
+      "resortId": "7614",
+      "name": "ULTIQA @ Chevron Renaissance",
+      "id": "4n96zsbx7K",
+      "location": {}
+    },
+    {
+      "resortId": "7615",
+      "name": "MANTRA WINGS RESORT - RENTAL",
+      "id": "KEtEvijHow",
+      "location": {}
+    },
+    {
+      "resortId": "7660",
+      "name": "WorldMark Resort Ballarat",
+      "id": "Lwsv6MNsbt",
+      "location": {}
+    },
+    {
+      "resortId": "7675",
+      "name": "Mantra Crown Towers - Rental",
+      "id": "ta0trzqxKn",
+      "location": {}
+    },
+    {
+      "resortId": "7809",
+      "name": "Wyndham Kirra Beach",
+      "id": "KrJOb0pwIb",
+      "location": {}
+    },
+    {
+      "resortId": "7810",
+      "name": "WorldMark Resort Coffs Harbour",
+      "id": "7lt78xe6v4",
+      "location": {}
+    },
+    {
+      "resortId": "7821",
+      "name": "WorldMark Resort Port Stephens",
+      "id": "dvGwpAcCmQ",
+      "location": {}
+    },
+    {
+      "resortId": "7822",
+      "name": "Wyndham Flynns Beach",
+      "id": "hxPzIuaGpK",
+      "location": {}
+    },
+    {
+      "resortId": "7823",
+      "name": "WorldMark  Resort Port Macquarie",
+      "id": "4M3SORMcCE",
+      "location": {}
+    },
+    {
+      "resortId": "7825",
+      "name": "WorldMark Resort Lakes Entrance",
+      "id": "dYmpGvA7Qw",
+      "location": {}
+    },
+    {
+      "resortId": "7885",
+      "name": "Tamarind Sands",
+      "id": "C14BhFyG1o",
+      "location": {}
+    },
+    {
+      "resortId": "8653",
+      "name": "The Emerald",
+      "id": "PPDnqhEIbQ",
+      "location": {}
+    },
+    {
+      "resortId": "8728",
+      "name": "Wyndham Sydney",
+      "id": "x9tyoi597L",
+      "location": {}
+    },
+    {
+      "resortId": "8777",
+      "name": "ULTIQA @ Alexandra Beach Resort",
+      "id": "OFtpDJYbkq",
+      "location": {}
+    },
+    {
+      "resortId": "8860",
+      "name": "ULTIQA @ City Towers",
+      "id": "QyPZIIeqwC",
+      "location": {}
+    },
+    {
+      "resortId": "8861",
+      "name": "ULTIQA @ Amalfi Resort",
+      "id": "IlPpAYgqYX",
+      "location": {}
+    },
+    {
+      "resortId": "8862",
+      "name": "ULTIQA @ Leeuwin Resort",
+      "id": "TbRa74Z991",
+      "location": {}
+    },
+    {
+      "resortId": "A031",
+      "name": "The Sands at Yamba",
+      "id": "jSk2ATEkJw",
+      "location": {}
+    },
+    {
+      "resortId": "A038",
+      "name": "Mantra Aqua",
+      "id": "ocO7wkPd3K",
+      "location": {}
+    },
+    {
+      "resortId": "A374",
+      "name": "Wyndham Outram Perth",
+      "id": "esfv5MZpVh",
+      "location": {}
+    },
+    {
+      "resortId": "A375",
+      "name": "ULTIQA @ Atrium Apartments",
+      "id": "BP3m2vleQ2",
+      "location": {}
+    },
+    {
+      "resortId": "A789",
+      "name": "Wyndham Dunsborough Resort & Spa",
+      "id": "3JesfaaOyG",
+      "location": {}
+    },
+    {
+      "resortId": "A790",
+      "name": "Wyndham Crown Towers",
+      "id": "vcnyaHJhn2",
+      "location": {}
+    },
+    {
+      "resortId": "C005",
+      "name": "Ramada  Marcoola Beach",
+      "id": "xe3miRfDrg",
+      "location": {}
+    },
+    {
+      "resortId": "C007",
+      "name": "ULTIQA @ Port Pacific",
+      "id": "M0obYEtrb4",
+      "location": {}
+    },
+    {
+      "resortId": "C375",
+      "name": "Wyndham Surfers Paradise",
+      "id": "SwADvOtd14",
+      "location": {}
+    },
+    {
+      "resortId": "C425",
+      "name": "ULTIQA @ The Viridian Noosa",
+      "id": "GJ8ELV5tge",
+      "location": {}
+    },
+    {
+      "resortId": "C427",
+      "name": "Wyndham Torquay",
+      "id": "zvNl2zL2tv",
+      "location": {}
+    },
+    {
+      "resortId": "C835",
+      "name": "Ramada  Port Douglas",
+      "id": "n87aK9tSZI",
+      "location": {}
+    },
+    {
+      "resortId": "D058",
+      "name": "Ramada Philip Island",
+      "id": "lF6dDQg6wS",
+      "location": {}
+    },
+    {
+      "resortId": "D832",
+      "name": "Ramada Resort Shoal Bay",
+      "id": "KAgu58NbHR",
+      "location": {}
+    },
+    {
+      "resortId": "R028",
+      "name": "Freestyle Resort",
+      "id": "2iJaez223H",
+      "location": {}
+    },
+    {
+      "resortId": "R168",
+      "name": "Australis Noosa Lakes - Rental",
+      "id": "FopI8UyBUV",
+      "location": {}
+    },
+    {
+      "resortId": "R359",
+      "name": "Mantra Legends-3 Night",
+      "id": "nOlJHbj5RG",
+      "location": {}
+    },
+    {
+      "resortId": "R597",
+      "name": "Oaks On Collins-3 Night",
+      "id": "xgHPAd0fyZ",
+      "location": {}
+    },
+    {
+      "resortId": "R598",
+      "name": "Oaks On Collins-4 Night",
+      "id": "4bIVaNpSUv",
+      "location": {}
+    },
+    {
+      "resortId": "R600",
+      "name": "Oaks On Collins",
+      "id": "JpdhtfJ8ph",
+      "location": {}
+    },
+    {
+      "resortId": "R617",
+      "name": "Aruba Surf - Rental",
+      "id": "br9tTKyBPx",
+      "location": {}
+    },
+    {
+      "resortId": "R716",
+      "name": "BreakFree Adelaide 5 Night",
+      "id": "d9f9E8L7VX",
+      "location": {}
+    },
+    {
+      "resortId": "R818",
+      "name": "Allegra Hervey Bay",
+      "id": "P50o3KIpc6",
+      "location": {}
+    },
+    {
+      "resortId": "R819",
+      "name": "Allegra Hervey Bay - Ocean View",
+      "id": "TJ9gbzlqqO",
+      "location": {}
+    },
+    {
+      "resortId": "R897",
+      "name": "Caribbean Resort - Rental",
+      "id": "yaPSlPyAVt",
+      "location": {}
+    },
+    {
+      "resortId": "R930",
+      "name": "WYNDHAM SURFERS PARADISE",
+      "id": "RyFZ3BBmvs",
+      "location": {}
+    },
+    {
+      "resortId": "R932",
+      "name": "Half Moon Bay Resort - Rental",
+      "id": "QfiA5IRbCA",
+      "location": {}
+    },
+    {
+      "resortId": "R934",
+      "name": "Boambee Bay Resort",
+      "id": "7WH2paNijT",
+      "location": {}
+    },
+    {
+      "resortId": "R938",
+      "name": "Oaks iStay River City Rental-3 Night",
+      "id": "VvqWpTInT9",
+      "location": {}
+    },
+    {
+      "resortId": "R956",
+      "name": "BreakFree Great Sandy Straits - Rental",
+      "id": "i0lly68QxH",
+      "location": {}
+    },
+    {
+      "resortId": "R958",
+      "name": "Rainbow Shores",
+      "id": "QLlE3PRf2v",
+      "location": {}
+    },
+    {
+      "resortId": "R962",
+      "name": "Mermaid Beach Park View - Rental",
+      "id": "cQNzw3JKYW",
+      "location": {}
+    },
+    {
+      "resortId": "RA31",
+      "name": "Oaks Goldsborough-4 Night",
+      "id": "CpaUhaFXzm",
+      "location": {}
+    },
+    {
+      "resortId": "RA32",
+      "name": "7N OAKS GOLDSBOROUGH",
+      "id": "cvIlCB0vzF",
+      "location": {}
+    },
+    {
+      "resortId": "RA33",
+      "name": "Ramada Resort Port Douglas-3 Night",
+      "id": "30XCFiVboP",
+      "location": {}
+    },
+    {
+      "resortId": "RA34",
+      "name": "Ramada Resort  Port Douglas-4 Night",
+      "id": "aDX3xt0mw0",
+      "location": {}
+    },
+    {
+      "resortId": "RA40",
+      "name": "Quality Hobart Midcity Hotel-4 Night",
+      "id": "xZpyDYqiKO",
+      "location": {}
+    },
+    {
+      "resortId": "RA41",
+      "name": "QUALITY HOBART MIDCITY HOTEL - RENTAL",
+      "id": "lwVeaxsT5J",
+      "location": {}
+    },
+    {
+      "resortId": "RA51",
+      "name": "Swell Resort-4 Night",
+      "id": "ATfIXq2iMB",
+      "location": {}
+    },
+    {
+      "resortId": "RB51",
+      "name": "Breakfree Cosmopolitan - Rental",
+      "id": "AKTePx1KSu",
+      "location": {}
+    },
+    {
+      "resortId": "RC41",
+      "name": "Ramada Phillip Island",
+      "id": "BBNeIw0GuW",
+      "location": {}
+    },
+    {
+      "resortId": "RA30",
+      "name": "Oaks Goldsborough-3 Night",
+      "id": "s33kMCNjyv",
+      "location": {}
+    }
+  ],
+  "count": 149
+}

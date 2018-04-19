@@ -1,0 +1,23 @@
+{
+  "results": [
+    {
+      "resortId": "1566",
+      "name": "West Oaks",
+      "id": "aNE0hMlW1W",
+      "location": {}
+    },
+    {
+      "resortId": "2101",
+      "name": "Sunrise Cove at Village West",
+      "id": "QHHQ5s64sV",
+      "location": {}
+    },
+    {
+      "resortId": "1775",
+      "name": "Clover Ridge",
+      "id": "VnWQeYkrdZ",
+      "location": {}
+    }
+  ],
+  "count": 3
+}
