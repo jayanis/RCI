@@ -169,7 +169,7 @@ app.service('resortService', function($rootScope, CONFIG) {
             }).done(function(data) {
                 $rootScope.hideSpinner();
                 if( data.success )
-                    deferred.resolve(data.response);
+                    deferred.resolve(data);
                 else
                     deferred.reject();
             }).fail(function(jqXHR, textStatus, errorThrown) {

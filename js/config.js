@@ -4,10 +4,10 @@ var API_BASE_V3_URL = 'http://rci.content-core.com/v3';
 //var API_BASE_URL = 'http://localhost:8081';
 
 angular.module('defaultLibrary').constant('CONFIG', {
-    GET_ALL_REGIONS_URL: '{{API_BASE_URL}}/region/'.replace('{{API_BASE_URL}}',API_BASE_URL),
-    GET_REGION_URL: '{{API_BASE_URL}}/resort/?location={{location}}&digest=true'.replace('{{API_BASE_URL}}',API_BASE_URL),
-    GET_RESORT_URL: '{{API_BASE_URL}}/resort/{{resortId}}'.replace('{{API_BASE_URL}}',API_BASE_URL),
-    GET_RESORTS_URL: '{{API_BASE_URL}}/resort/?location={{location}}&digest=true&limit=1000'.replace('{{API_BASE_URL}}',API_BASE_URL),
+    //GET_ALL_REGIONS_URL: '{{API_BASE_URL}}/region/'.replace('{{API_BASE_URL}}',API_BASE_URL),
+    //GET_REGION_URL: '{{API_BASE_URL}}/resort/?location={{location}}&digest=true'.replace('{{API_BASE_URL}}',API_BASE_URL),
+    //GET_RESORT_URL: '{{API_BASE_URL}}/resort/{{resortId}}'.replace('{{API_BASE_URL}}',API_BASE_URL),
+    //GET_RESORTS_URL: '{{API_BASE_URL}}/resort/?location={{location}}&digest=true&limit=1000'.replace('{{API_BASE_URL}}',API_BASE_URL),
     GET_ATTRACTIONS_URL: '{{API_BASE_URL}}/attraction/?lat={{lat}}&lng={{lng}}&source={{source}}&offset={{offset}}&limit={{limit}}'.replace('{{API_BASE_URL}}',API_BASE_URL),
     GET_EVENTS_URL: '{{API_BASE_URL}}/event/?lat={{lat}}&lng={{lng}}&offset={{offset}}&limit={{limit}}&radius={{radius}}'.replace('{{API_BASE_URL}}',API_BASE_URL),
     GET_MEDIA_URL: '{{API_BASE_URL}}/media/?location={{location}}&types=article,video'.replace('{{API_BASE_URL}}',API_BASE_URL),

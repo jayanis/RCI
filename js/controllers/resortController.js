@@ -392,7 +392,7 @@ app.controller('ResortController', function($scope, $rootScope, $analytics, $win
 
         resortService.getLocalTime($scope.resortCoords[0],$scope.resortCoords[1]).then(
             function(response){
-                var date = moment.utc(response.timestamp*1000)._d;
+                var date = moment.utc(response.response.timestamp*1000)._d;
                 $scope.localTime = new Date(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
             }
         );

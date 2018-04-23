@@ -56,7 +56,7 @@ app.run(function($rootScope, $window, $modal, $analytics, safeApply, CONFIG) {
     $rootScope.showMenu = false;
     $rootScope.saveAndRestoreState = false;
     $rootScope.helpOverlayShown = false;
-    
+
     //  see if we're online or not
     $rootScope.isOnline = function() {
         $.get(CONFIG.ONLINE_TEST_URL)
