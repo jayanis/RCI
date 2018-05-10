@@ -1,1 +1,28 @@
-<div id="area-events"> <div class="row" style="margin-left:10px;margin-right:10px"> <div class="content col-sm-6 col-md-6 col-lg-6" ng-if="hasLocalEvents" ng-class="{'minimized':showingLocalInfo}"> <div class="title">Events</div> <div id="events" class="scroll-y touch" ontouchmove="onTouchMove(event)" ng-class="{multipage: localEventsPageCount>1}"> <div ng-repeat="event in localEvents track by $index" id="event-{{event.id}}" class="event"> <header> <h1 ng-if="event.url"><a target="_blank" ng-href="{{event.url}}">{{event.title}}</a></h1> <h1 ng-if="!event.url">{{event.title}}</h1> <h2 ng-if="event.dateStart">{{event.dateStart|date:'EEEE, MMMM d, y'}}<span ng-if="event.dateStop"> - {{event.dateStop|date:'EEEE, MMMM d, y'}}</span></h2> <h3 ng-if="event.timeStart">{{event.timeStart|date:'h:mm a'}}<span ng-if="event.timeStop"> - {{event.timeStop|date:'h:mm a'}}</span></h3> <address> <div ng-if="event.location.title">{{event.location.title}}</div> <div ng-if="event.displayAddress">{{event.displayAddress}}</div> </address> </header> <p ng-show="event.description!=''" ng-bind-html="event.description"></p> </div> </div> <hr> <ul id="paging" class="list-inline" ng-class="{hidden:loadingEvents}"> <li><button ng-click="setLocalEventsPage(0)" ng-disabled="localEventsPage==0" class="btn btn-link paging-link">&lt;&lt;</button></li> <li><button ng-click="setLocalEventsPage(localEventsPage-1)" ng-disabled="localEventsPage==0" class="btn btn-link paging-link">&lt;</button></li> <li ng-repeat="page in localEventsPages track by $index"><button ng-click="setLocalEventsPage(page)" class="btn btn-link paging-link" ng-class="{active:localEventsPage==page}">{{page+1}}</button></li> <li><button href="#" ng-click="setLocalEventsPage(localEventsPage+1)" ng-disabled="localEventsPage==localEventsPageCount-1" class="btn btn-link paging-link">&gt;</button></li> <li><button href="#" ng-click="setLocalEventsPage(localEventsPageCount-1)" ng-disabled="localEventsPage==localEventsPageCount-1" class="btn btn-link paging-link">&gt;&gt;</button></li> </ul> </div> <div class="content col-sm-6 col-md-6 col-lg-6" ng-if="!hasLocalEvents" ng-class="{'minimized':showingLocalInfo}"> Sorry, we couldn't find any local events in this area. <div> </div> </div></div></div>
+<div id="area-events">
+  <div class="row" style="margin-left:10px;margin-right:10px">
+    <div class="content col-sm-6 col-md-6 col-lg-6" ng-if="hasLocalEvents" ng-class="{'minimized':showingLocalInfo}">
+      <div class="title">Events</div>
+      <div id="events" class="scroll-y touch" ontouchmove="onTouchMove(event)" ng-class="{multipage: localEventsPageCount>1}">
+        <div ng-repeat="event in localEvents track by $index" id="event-{{event.id}}" class="event">
+          <header>
+            <h1 ng-if="event.url"><a target="_blank" ng-href="{{event.url}}">{{event.title}}</a></h1>
+            <h1 ng-if="!event.url">{{event.title}}</h1>
+            <h2 ng-if="event.dateStart">{{event.dateStart|date:'EEEE, MMMM d, y'}}<span ng-if="event.dateStop"> - {{event.dateStop|date:'EEEE, MMMM d, y'}}</span></h2>
+            <h3 ng-if="event.timeStart">{{event.timeStart|date:'h:mm a'}}<span ng-if="event.timeStop"> - {{event.timeStop|date:'h:mm a'}}</span></h3> <address> <div ng-if="event.location.title">{{event.location.title}}</div> <div ng-if="event.displayAddress">{{event.displayAddress}}</div> </address> </header>
+          <p ng-show="event.description!=''" ng-bind-html="event.description"></p>
+        </div>
+      </div>
+      <hr>
+      <ul id="paging" class="list-inline" ng-class="{hidden:loadingEvents}">
+        <li><button ng-click="setLocalEventsPage(0)" ng-disabled="localEventsPage==0" class="btn btn-link paging-link">&lt;&lt;</button></li>
+        <li><button ng-click="setLocalEventsPage(localEventsPage-1)" ng-disabled="localEventsPage==0" class="btn btn-link paging-link">&lt;</button></li>
+        <li ng-repeat="page in localEventsPages track by $index"><button ng-click="setLocalEventsPage(page)" class="btn btn-link paging-link" ng-class="{active:localEventsPage==page}">{{page+1}}</button></li>
+        <li><button href="#" ng-click="setLocalEventsPage(localEventsPage+1)" ng-disabled="localEventsPage==localEventsPageCount-1" class="btn btn-link paging-link">&gt;</button></li>
+        <li><button href="#" ng-click="setLocalEventsPage(localEventsPageCount-1)" ng-disabled="localEventsPage==localEventsPageCount-1" class="btn btn-link paging-link">&gt;&gt;</button></li>
+      </ul>
+    </div>
+    <div class="content col-sm-6 col-md-6 col-lg-6" ng-if="!hasLocalEvents" ng-class="{'minimized':showingLocalInfo}"> Sorry, we couldn't find any local events in this area.
+      <div> </div>
+    </div>
+  </div>
+</div>

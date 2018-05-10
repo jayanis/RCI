@@ -392,7 +392,7 @@ app.controller('ResortController', function($scope, $rootScope, $analytics, $win
 
         resortService.getLocalTime($scope.resortCoords[0],$scope.resortCoords[1]).then(
             function(response){
-                var date = moment.utc(response.response.timestamp*1000)._d;
+                var date = moment.utc(response.timestamp*1000)._d;
                 $scope.localTime = new Date(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
             }
         );
@@ -450,15 +450,15 @@ app.controller('ResortController', function($scope, $rootScope, $analytics, $win
             function(response){
                 angular.forEach(response.results,function(result,index) {
                     if( result.timeStart != null ) {
-                        if( result.timeStop != null && result.timeStop != result.timeStart ) {
-                            result.dateStop = new Date(result.timeStop.replace(/-/g, "/"));
-                            result.timeStop = result.dateStop.toString().indexOf('00:00:00') == -1 ? result.dateStop : null;
-                        }
-                        result.dateStart = new Date(result.timeStart.replace(/-/g, "/"));
-                        result.timeStart = result.dateStart.toString().indexOf('00:00:00') == -1 ? result.dateStart : null;
-                    }
+                      if( result.stopTime != null && result.stopTime != result.timeStart ) {
+                          result.dateStop = new Date(result.stopTime.replace(/-/g, "/"));
+                          result.timeStop = result.dateStop.toString().indexOf('00:00:00') == -1 ? result.dateStop : null;
+                      }
+                      result.dateStart = new Date(result.timeStart.replace(/-/g, "/"));
+                      result.timeStart = result.dateStart.toString().indexOf('00:00:00') == -1 ? result.dateStart : null;
+                  }
                     result.id = index+1;
-                    result.displayAddress = [result.location.address,result.location.locality,result.location.region,result.location.postcode].filter(function(item){ return item!=null && item.trim()!=''; }).join(', ');
+                    result.displayAddress = [result.address.title,result.address.address,result.address.locality,result.address.region,result.address.postcode].filter(function(item){ return item!=null && item.trim()!=''; }).join(', ');
                 });
 
                 $scope.localEvents = response.results;

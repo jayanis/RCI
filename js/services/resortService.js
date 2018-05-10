@@ -51,7 +51,7 @@ app.service('resortService', function($rootScope, CONFIG) {
         },
         getRegionMedia: function (location) {
             var deferred = $.Deferred();
-            var url = CONFIG.GET_MEDIA_URL;
+            var url = CONFIG.GET_MEDIA_URL +'&'+ CONFIG.V3_ACCESS_TOKEN;
             url = url.replace('{{location}}',encodeURIComponent(location));
             $rootScope.showSpinner();
             $.ajax({
@@ -59,8 +59,8 @@ app.service('resortService', function($rootScope, CONFIG) {
                 dataType: 'json'
             }).done(function(data) {
                 $rootScope.hideSpinner();
-                if (data && data.success && $.isArray(data.response.results)) {
-                    deferred.resolve(data.response);
+                if (data && data.success && $.isArray(data.results)) {
+                    deferred.resolve(data);
                 } else {
                     deferred.reject();
                 }
@@ -105,7 +105,7 @@ app.service('resortService', function($rootScope, CONFIG) {
         },
         getResorts: function(location) {
             var deferred = $.Deferred();
-            var url = CONFIG.GET_RESORTS_URL;
+            var url = CONFIG.GET_RESORTS_URL + '&' + CONFIG.V3_ACCESS_TOKEN;
             url = url.replace('{{location}}', encodeURIComponent(location));
             $rootScope.showSpinner();
             $.ajax({
@@ -113,8 +113,8 @@ app.service('resortService', function($rootScope, CONFIG) {
                 dataType: 'json'
             }).done(function(data) {
                 $rootScope.hideSpinner();
-                if (data && data.success && data.response.results && data.response.results.length) {
-                    deferred.resolve(data.response);
+                if (data && data.success && data.results && data.results.length) {
+                    deferred.resolve(data);
                 } else {
                     deferred.reject();
                 }
@@ -133,7 +133,7 @@ app.service('resortService', function($rootScope, CONFIG) {
                 dataType: 'json'
             }).done(function(data) {
                 $rootScope.hideSpinner();
-                if (data && data.success && data.response.results && data.response.results.length) {
+                if (data && data.success && data.results && data.results.length) {
                     deferred.resolve(data.response);
                 } else {
                     deferred.reject();
@@ -159,7 +159,7 @@ app.service('resortService', function($rootScope, CONFIG) {
         },
         getLocalTime: function(lat,lng) {
             var deferred = $.Deferred();
-            var url = CONFIG.GET_TIME_URL;
+            var url = CONFIG.GET_TIME_URL +'&'+ CONFIG.V3_ACCESS_TOKEN;
             url = url.replace('{{lat}}',lat);
             url = url.replace('{{lng}}',lng);
             $rootScope.showSpinner();
@@ -169,7 +169,7 @@ app.service('resortService', function($rootScope, CONFIG) {
             }).done(function(data) {
                 $rootScope.hideSpinner();
                 if( data.success )
-                    deferred.resolve(data);
+                    deferred.resolve(data.results[0]);
                 else
                     deferred.reject();
             }).fail(function(jqXHR, textStatus, errorThrown) {
@@ -179,7 +179,7 @@ app.service('resortService', function($rootScope, CONFIG) {
         },
         getLocalWeather: function(lat,lng) {
             var deferred = $.Deferred();
-            var url = CONFIG.GET_WEATHER_URL;
+            var url = CONFIG.GET_WEATHER_URL +'&'+ CONFIG.V3_ACCESS_TOKEN;
             url = url.replace('{{lat}}',lat);
             url = url.replace('{{lng}}',lng);
             $rootScope.showSpinner();
@@ -189,7 +189,7 @@ app.service('resortService', function($rootScope, CONFIG) {
             }).done(function(data) {
                 $rootScope.hideSpinner();
                 if( data.success )
-                    deferred.resolve(data.response);
+                    deferred.resolve(data.results[0]);
                 else
                     deferred.reject();
             }).fail(function(jqXHR, textStatus, errorThrown) {
@@ -200,7 +200,7 @@ app.service('resortService', function($rootScope, CONFIG) {
         getLocalAttractions: function(lat,lng,source,offset) {
             var source = typeof source !== 'undefined' ? source : 'factual';
             var deferred = $.Deferred();
-            var url = CONFIG.GET_ATTRACTIONS_URL;
+            var url = CONFIG.GET_ATTRACTIONS_URL +'&'+ CONFIG.V3_ACCESS_TOKEN;
             url = url.replace('{{lat}}',lat);
             url = url.replace('{{lng}}',lng);
             url = url.replace('{{source}}',source);
@@ -212,8 +212,8 @@ app.service('resortService', function($rootScope, CONFIG) {
                 dataType: 'json'
             }).done(function(data) {
                 $rootScope.hideSpinner();
-                if (data && data.success && data.response.results)
-                    deferred.resolve(data.response);
+                if (data && data.success && data.results)
+                    deferred.resolve(data);
                 else
                     deferred.reject();
             }).fail(function(errorThrown) {
@@ -223,7 +223,7 @@ app.service('resortService', function($rootScope, CONFIG) {
         },
         getLocalEvents: function(lat,lng,offset) {
             var deferred = $.Deferred();
-            var url = CONFIG.GET_EVENTS_URL;
+            var url = CONFIG.GET_EVENTS_URL +'&'+CONFIG.V3_ACCESS_TOKEN;
             url = url.replace('{{lat}}',lat);
             url = url.replace('{{lng}}',lng);
             url = url.replace('{{offset}}',offset);
@@ -235,8 +235,8 @@ app.service('resortService', function($rootScope, CONFIG) {
                 dataType: 'json'
             }).done(function(data) {
                 $rootScope.hideSpinner();
-                if (data && data.success && data.response.results)
-                    deferred.resolve(data.response);
+                if (data && data.success && data.results)
+                    deferred.resolve(data);
                 else
                     deferred.reject();
             }).fail(function(errorThrown) {

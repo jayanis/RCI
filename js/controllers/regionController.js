@@ -28,7 +28,7 @@ app.controller('RegionController', function($scope,$rootScope,$window,resortServ
             $scope.resorts = $scope.region.resorts;
             return;
         }
-        resortService.getResorts($scope.region.title)
+        resortService.getResorts($scope.region.label)
             .done(function(data) {
                 var resorts = [];
                 $.each(data.results,function(index,resort){
@@ -49,7 +49,7 @@ app.controller('RegionController', function($scope,$rootScope,$window,resortServ
         if( $scope.region.mediaFetched )
             return;
         $scope.region.mediaFetched = true;
-        resortService.getRegionMedia($scope.region.title)
+        resortService.getRegionMedia($scope.region.label)
             .done(function(data) {
                 if(data != null ) {
                     var region = $scope.region;
