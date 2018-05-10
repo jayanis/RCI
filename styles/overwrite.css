@@ -1,0 +1,64 @@
+/* CSS Document */
+.page {
+    width: 100%;
+	float:left;
+    height: 100%;
+    background-color: #ffffff;
+	background: no-repeat fixed; 
+	-webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+.full-screen {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.nav-right-bar {
+    right: 0;
+	left: unset;
+}
+.nav-left-bar, .nav-right-bar{
+	height:100%;
+}
+body, html{
+	position: inherit;
+    overflow-y: scroll;
+	overflow: scroll;	
+	width: auto;
+    height: auto;
+}
+#home-title{
+	padding-top: 80px;
+    text-align: center;
+    float: left;
+	height:auto;
+}
+#home-jump-input {
+    float: left;
+	margin:15px 0;
+}
+.wapper{
+	margin:0 auto;
+	max-width:1400px;	
+}
+.tag-cnt{
+	float:left;
+	width:100%;
+	margin:0 0 0 20px;	
+}
+
+/* - min-width: 768 */
+@media (max-width: 768px) {
+	#region-other{
+		float:left !important;	
+		margin-top:15px;
+	}
+	
+	.full-screen {
+    height: auto;
+	}
+}

@@ -2,6 +2,7 @@
      hm-swipe-left="showRegion(findRegionById('gFzwc5gELO'), $root.config.ANIMATION_RIGHT_TO_LEFT)"
      hm-swipe-right="showRCISubscribingMembershipPage($root.config.ANIMATION_LEFT_TO_RIGHT)"
      ng-style="{'background-image':'url('+coverImage+')'}" ng-show="coverImage!=null">
+     <div class="wapper">
     <div id="home-title">
         <div id="home-title-inline">
             <div id="home-title-text">RCI® DIRECTORY <span class="small">OF</span> AFFILIATED RESORTS</div>
@@ -40,9 +41,13 @@
             </div>
         </div>
     </div>
-    <img id="home-trademark" ng-src="{{$root.baseUrl + 'images/background/home_2.png'}}"> <img id="home-place"
-                                                                                               ng-src="{{$root.baseUrl + 'images/background/home_3.png'}}">
+    <img id="home-trademark" ng-src="{{$root.baseUrl + 'images/background/home_2.png'}}">
+    <div class="tag-cnt">
+     <img ng-src="{{$root.baseUrl + 'images/background/home_3.png'}}">
+	</div>
 </div>
+</div>
+
 <div class="nav-left-bar"
      ng-style="{backgroundImage: 'url(images/page-left-black.png)', backgroundRepeat: 'repeat-y'}"></div>
 <div class="nav-right-bar"
