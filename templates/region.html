@@ -1,4 +1,6 @@
-<div id="region" class="page" ng-style="{'background-color': region.color}" hm-swipe-left="nextRegion()"
+<div class="row">
+<div class="col-md-12">
+<div id="region" class="page" style="height:auto;" ng-style="{'background-color': region.color}" hm-swipe-left="nextRegion()"
      hm-swipe-right="previousRegion()" hm-swipe-down="showRegionFromList($root.config.ANIMATION_UP_TO_DOWN)"
      ng-controller="RegionController" ng-init="init()" ng-cloak>
     <div id="offline-prompt" ng-show="$root.showOfflinePrompt && !online">
@@ -12,6 +14,27 @@
         <div map max-bounds="regionBounds" resorts="resorts" fit-to-markers="true" focus="resort"
              on-select-resort="selectResortMapMarker(data)"></div>
     </div>
+    <div id="tap-for-detail-button" ng-click="showRegionHelp = !showRegionHelp">
+        <hr>
+        <div class="pull-left"><img class="icon-expand" ng-show="!showRegionHelp"> <img class="icon-collapse" ng-show="showRegionHelp">
+            <div class="region-help-button">TAP FOR<br>DETAILS</div>
+        </div>
+    </div>
+    <div id="region-help">
+                <hr ng-if="showRegionHelp">
+                <div class="region-help-text" ng-if="showRegionHelp">Information may have changed since publication.
+                    Please confirm details before planning your trip. The information provided in this Directory
+                    relating to local businesses, services and entertainment is for your convenience only. RCI has no
+                    affiliation, association, or relationship with any of the featured vendors, and each vendor is
+                    solely responsible for the product or service it provides. RCI does not endorse any of the
+                    affiliated resort activities, guides, vendors, or service providers described. It is the
+                    individual’s responsibility to investigate the safety and suitability of any activity and the
+                    credentials and fitness of any guide, vendor, or service provider. RCI expressly denies any
+                    liability for engaging in any activity and for using any guide, vendor or service provider that may
+                    be mentioned or described in this Directory. Additional fees and restrictions may apply to any
+                    activity or service.
+                </div>
+            </div>
     <div id="region-resort-media">
         <div id="region-resort" class="pull-left">
             <div class="region-title-bar">
@@ -36,6 +59,7 @@
                 </table>
             </div>
         </div>
+        
         <div id="region-media" class="pull-right touch" ontouchmove="onTouchMove(event)">
             <div class="region-title-bar" ng-show="online">
                 <div class="region-title">Articles, Videos and More</div>
@@ -61,30 +85,10 @@
                     </table>
                 </div>
             </div>
-            <div id="region-help">
-                <hr ng-if="showRegionHelp">
-                <div class="region-help-text" ng-if="showRegionHelp">Information may have changed since publication.
-                    Please confirm details before planning your trip. The information provided in this Directory
-                    relating to local businesses, services and entertainment is for your convenience only. RCI has no
-                    affiliation, association, or relationship with any of the featured vendors, and each vendor is
-                    solely responsible for the product or service it provides. RCI does not endorse any of the
-                    affiliated resort activities, guides, vendors, or service providers described. It is the
-                    individual’s responsibility to investigate the safety and suitability of any activity and the
-                    credentials and fitness of any guide, vendor, or service provider. RCI expressly denies any
-                    liability for engaging in any activity and for using any guide, vendor or service provider that may
-                    be mentioned or described in this Directory. Additional fees and restrictions may apply to any
-                    activity or service.
-                </div>
-            </div>
+            
         </div>
     </div>
-    <div id="tap-for-detail-button" ng-click="showRegionHelp = !showRegionHelp">
-        <hr>
-        <div class="pull-left"><img class="icon-expand" ng-show="!showRegionHelp"> <img class="icon-collapse"
-                                                                                        ng-show="showRegionHelp">
-            <div class="region-help-button">TAP FOR<br>DETAILS</div>
-        </div>
-    </div>
+    
 </div>
 <div class="nav-left-bar" ng-style="{backgroundImage: 'url(images/page-left-white.png)', backgroundRepeat: 'repeat-y'}"
      ng-if="showPreviousRegion"></div>
@@ -92,3 +96,6 @@
      ng-style="{backgroundImage: 'url(images/page-right-white.png)', backgroundRepeat: 'repeat-y'}"
      ng-if="showNextRegion"></div> <img class="menu-button" src="images/menu.png" ng-click="$root.showMenu = true"
                                         ng-show="!$root.showMenu">
+                                        
+</div>
+</div>

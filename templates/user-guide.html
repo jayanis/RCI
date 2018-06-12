@@ -1,3 +1,14 @@
+<!--<script>
+$(function () {
+    // Handler for .ready() called.
+    $("img").on("click",function(){
+		$(this).toggleClass("inactive_thm_img");
+        event.preventDefault();
+        $(this).toggleClass("active_thm_img");
+    })
+});
+</script>-->
+
 <div id="user-guide" class="page" ng-controller="UserGuideController" hm-swipe-left="showRCISubscribingMembershipPage($root.config.ANIMATION_RIGHT_TO_LEFT)" hm-swipe-right="showWelcomePage($root.config.ANIMATION_LEFT_TO_RIGHT)"> 
 <div class="row">
 <div class="col-md-12 common_box" style="z-index: 999999999;">
@@ -8,7 +19,21 @@
   <img src="images/background/user-guide_0.png"> 
   </div>
 <div class="col-md-12" style="position:relative;float: left; width: 100%;">
-<img id="user-guide-1" src="images/background/user-guide_1.png" ng-if="status == 1" ng-click="onScreenTap($event)" class="fade-animation"> <img id="user-guide-2" src="images/background/user-guide_2.png" ng-if="status == 2" ng-click="onScreenTap($event)" class="fade-animation"> <img id="user-guide-3" src="images/background/user-guide_3.png" ng-if="status == 3" ng-click="onScreenTap($event)" class="fade-animation"> <img id="user-guide-4" src="images/background/user-guide_4.png" ng-if="status == 4 || status == 5" ng-click="onScreenTap($event)" class="fade-animation"> <img id="user-guide-5" src="images/background/user-guide_5.png" ng-if="status == 5" ng-click="onScreenTap($event)" class="fade-animation">  
+<!--<img id="user-guide-1" src="images/background/user-guide_1.png" ng-if="status == 1" ng-click="onScreenTap($event)" class="fade-animation"> <img id="user-guide-2" src="images/background/user-guide_2.png" ng-if="status == 2" ng-click="onScreenTap($event)" class="fade-animation"> <img id="user-guide-3" src="images/background/user-guide_3.png" ng-if="status == 3" ng-click="onScreenTap($event)" class="fade-animation"> <img id="user-guide-4" src="images/background/user-guide_4.png" ng-if="status == 4 || status == 5" ng-click="onScreenTap($event)" class="fade-animation"> <img id="user-guide-5" src="images/background/user-guide_5.png" ng-if="status == 5" ng-click="onScreenTap($event)" class="fade-animation">-->  
+<div class="row">
+<div class="col-xs-12" style="padding: 0 20px;">
+<img src="images/background/user-guide_1.png" class="fade-animation" usemap="#myImageMap" id="myImage" border="0">
+<map name="myImageMap" id="myImageMap">
+  <area shape="rect" coords="2,3,736,454" href="asdasd" class="fade-animation"/>
+</map>
+</div>
+<div class="col-xs-12 text-cnter" style="text-align:center;">
+  <img src="images/background/thm_1.png" class="user_thm" onclick="document.getElementById('myImage').src='images/background/user-guide_1.png'" width="79" height="92" style="margin:0 10px" /> 
+  <img src="images/background/thm_2.png" class="user_thm" onclick="document.getElementById('myImage').src='images/background/user-guide_2.png'" width="79" height="92" style="margin:0 10px" />
+  <img src="images/background/thm_3.png" class="user_thm" onclick="document.getElementById('myImage').src='images/background/user-guide_3.png'" width="79" height="92" style="margin:0 10px" /></div>
+
+</div>
+
 </div>
 
 <div class="nav-left-bar" ng-style="{backgroundImage: 'url(images/page-left-black.png)', backgroundRepeat: 'repeat-y'}"></div>

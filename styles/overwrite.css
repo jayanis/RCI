@@ -118,8 +118,21 @@ body, html{
 #user-guide-1, #user-guide-2, #user-guide-3{
 	top: 0px;
 	}
-
-
+/*.inactive_thm_img{border: none;} 
+.active_thm_img{border: solid 2px blue;} */
+.region-resort-media{
+	height:auto;
+}
+#tap-for-detail-button {
+    padding-left: 50px;
+    width: 100%;
+    height: 40px;
+    max-width: 390px;
+}
+.offline #region-help {
+    padding-top: 10px;
+    padding-left: 50px;
+}		
 
 
 /* - min-width: 768 */
@@ -136,6 +149,15 @@ body, html{
 	top: 0px;
 	left:20px;
 	
+	}
+}
+@media (max-width: 685px) {
+	#tab-nav a {
+    min-height: 80px;
+	margin:auto;
+	}
+	.content {
+    padding-top: 65px;
 	}
 }
 @media (max-width: 420px) {
