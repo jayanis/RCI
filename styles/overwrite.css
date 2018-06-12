@@ -1,0 +1,167 @@
+/* CSS Document */
+body{
+	-webkit-overflow-scrolling: touch !important;/* Lets it scroll lazy */
+
+-webkit-overflow-scrolling: auto !important; /* Stops scrolling immediately */	
+background:#fff;
+
+}
+img {
+    max-width: 100%;
+}
+.page {
+    width: 100%;
+	float:left;
+    height: 100%;
+   /* background-color: #ffffff !important;*/
+	background: no-repeat fixed; 
+	-webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+.full-screen {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+	background: #fff;
+}
+.nav-right-bar {
+    right: 0;
+	left: unset;
+}
+.nav-left-bar, .nav-right-bar{
+	height:100%;
+}
+body, html{
+	position: inherit;
+    overflow-y: scroll;
+	overflow: scroll;	
+	width: auto;
+    height: auto;
+	background: #fff;
+}
+#home-title{
+	padding-top: 80px;
+    text-align: center;
+    float: left;
+	height:auto;
+}
+#home-jump-input {
+    float: left;
+	margin:15px 0;
+}
+.wapper{
+	margin:0 auto;
+	max-width:1400px;	
+}
+.tag-cnt{
+	float:left;
+	width:100%;
+	margin:0 0 0 20px;	
+}
+#region-usa, #region-other{width:50%;}
+.facility_imgBox{
+	float:left;
+	width:100%;
+	height:70px;
+	vertical-align:central;
+	text-align:center;	
+}
+.facility_Box{
+	float:left;
+	width:100%;
+	margin:20px 0;
+}
+.facility_Box img{
+	cursor:pointer;
+}
+.facility_Box .text {
+    display: table-cell;
+    vertical-align: middle;
+    color: rgb(143,150,150);
+    text-transform: uppercase;
+    font-family: Gotham;
+    font-weight: 600;
+    font-size: 10px;
+	width:100%;
+	text-align:center;
+	margin:10px 0 5px 0;
+	float:left;
+	height:45px;
+}
+.membership-icon-column, membership-text-column{
+	padding:10px;
+	vertical-align:top;
+}
+#membership-buttons {
+    height: auto;
+	position: relative;
+}
+.membership-popup-close {
+    position: absolute;
+    left: 50px;
+    top: 40px;
+}
+#user-guide img{
+	max-width:100%;	
+}
+#home-regions a{
+	cursor:pointer;
+}
+.common_box{
+	float:left;
+	width:100%;	
+}
+#user-guide-1, #user-guide-2, #user-guide-3{
+	top: 0px;
+	}
+
+
+
+
+/* - min-width: 768 */
+@media (max-width: 768px) {
+	#region-other{
+		float:left !important;	
+		margin-top:15px;
+	}
+	#region-usa, #region-other{width:100%;}
+	#home-title {
+    padding-top: 30px;
+	}
+	#user-guide-1, #user-guide-2, #user-guide-3{
+	top: 0px;
+	left:20px;
+	
+	}
+}
+@media (max-width: 420px) {
+	#home-title-text, #home-title-text .small{
+	 font-size:36px;
+	 text-shadow: 1px 1px 5px rgba(255, 255, 255, 1);
+	}
+	
+}
+@media (max-width: 380px) {
+	#home-jump-input label{
+	 width:100%;
+	 text-align:center;
+	}
+	#home-jump-input input{
+		margin: 0 auto;
+	float: none;
+	}
+	#home-regions {
+    height: 100%;
+    padding-top: 360px;
+	}
+}
+@media (min-width: 2500px) {
+	
+	.full-screen {
+    height: 100%;
+	}
+}

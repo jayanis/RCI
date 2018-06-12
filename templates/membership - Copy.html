@@ -1,0 +1,271 @@
+<div id="membership" class="page" ng-controller="MembershipController" hm-swipe-left="showHome($root.config.ANIMATION_RIGHT_TO_LEFT)" hm-swipe-right="showUserGuidePage($root.config.ANIMATION_LEFT_TO_RIGHT)"> <img src="images/membership/banner.png">
+  <div id="membership-title">Get More With RCI</div>
+  <div id="membership-description"> RCI gives you access to more vacation experiences, more travel options and more flexibility in planning and booking your trip. It all adds up to even more value from your RCI® subscribing membership! Here are just some of the vacation opportunities and membership benefits you can take advantage of—<i>because your vacation means the world to us.®</i></div>
+  <div id="membership-buttons">
+  <div id="membership-button-0" class="facility_Box"  ng-if="pageNo == 0">
+  <div class="row">
+  	<div class="col-sm-3 col-xs-6">
+    	<div class="facility_imgBox">
+    	<img src="images/membership/icon_1.png" ng-click="selectPage(1)">
+        </div>
+          <div class="text">Extra Vacations&#8480;<br>
+            Getaways</div>
+    </div>
+    <div class="col-sm-3 col-xs-6">
+    <div class="facility_imgBox">
+    	<img src="images/membership/icon_2.png" ng-click="selectPage(2)">
+        </div>
+          <div class="text">RCI&reg; Cruise <br>Vacations</div>
+    </div>
+    <div class="col-sm-3 col-xs-6">
+    <div class="facility_imgBox">
+    	<img src="images/membership/icon_3.png" ng-click="selectPage(3)">
+        </div>
+          <div class="text">RCI&reg; travel</div>
+    </div>
+    <div class="col-sm-3 col-xs-6">
+    <div class="facility_imgBox">
+    	<img src="images/membership/icon_4.png" ng-click="selectPage(4)">
+        </div>
+          <div class="text">All-inclusive<br>
+            Resort Vacations</div>
+    </div>
+  </div>
+  
+  <div class="row">
+  	<div class="col-sm-3 col-xs-6">
+    	<div class="facility_imgBox">
+    	<img src="images/membership/icon_5.png" ng-click="selectPage(5)">
+        </div>
+          <div class="text">Last Call&#8480; Vacations</div>
+    </div>
+    <div class="col-sm-3 col-xs-6">
+    <div class="facility_imgBox">
+    	<img src="images/membership/icon_6.png" ng-click="selectPage(6)">
+        </div>
+          <div class="text">Exchange Vacations</div>
+    </div>
+    <div class="col-sm-3 col-xs-6">
+    <div class="facility_imgBox">
+    	<img src="images/membership/icon_7.png" ng-click="selectPage(7)">
+        </div>
+          <div class="text">RCI Platinum&reg;<br>
+            Membership Tier</div>
+    </div>
+    <div class="col-sm-3 col-xs-6">
+    <div class="facility_imgBox">
+    	<img src="images/membership/icon_8.png" ng-click="selectPage(8)">
+        </div>
+          <div class="text">RCI&reg; Guest<br>
+            Certificates</div>
+    </div>
+  </div>
+  
+  </div>
+   <!-- <table id="membership-button-0" ng-if="pageNo == 0">
+      <tr>
+        <td><img src="images/membership/icon_1.png" ng-click="selectPage(1)">
+          <div class="text"><span>Extra Vacations&#8480;<br>
+            Getaways</span></div>
+        <td><img src="images/membership/icon_2.png" ng-click="selectPage(2)">
+          <div class="text"><span>RCI&reg; Cruise Vacations</span></div>
+        <td><img src="images/membership/icon_3.png" ng-click="selectPage(3)">
+          <div class="text"><span>RCI&reg; travel</span></div>
+        <td><img src="images/membership/icon_4.png" ng-click="selectPage(4)">
+          <div class="text"><span>All-inclusive<br>
+            Resort Vacations</span></div>
+      <tr>
+        <td><img src="images/membership/icon_5.png" ng-click="selectPage(5)">
+          <div class="text"><span>Last Call&#8480; Vacations</span></div>
+        <td><img src="images/membership/icon_6.png" ng-click="selectPage(6)">
+          <div class="text"><span>Exchange Vacations</span></div>
+        <td><img src="images/membership/icon_7.png" ng-click="selectPage(7)">
+          <div class="text"><span>RCI Platinum&reg;<br>
+            Membership Tier</span></div>
+        <td><img src="images/membership/icon_8.png" ng-click="selectPage(8)">
+          <div class="text"><span>RCI&reg; Guest<br>
+            Certificates</span></div>
+      <tr>
+        <td colspan="4"><div id="tap-message" ng-if="pageNo == 0">Tap Icons Above to Learn More</div>
+    </table>-->
+    <div id="membership-button-1" ng-if="pageNo == 1" class="membership-popup fade-animation">
+    	<div class="row" style="padding:30px 10px 10px 10px;">
+  	<div class="col-sm-3" style="text-align:center; margin-bottom:20px;"><img src="images/membership/icon_1_large.png"></div>
+    <div class="col-sm-9"><div class="membership-popup-title">Extra Vacations&#8480; Getaways</div>
+            <div class="membership-popup-subtitle">Vacation without exchanging when you book an Extra Vacations&#8480; Getaway&mdash;booked with cash as you would a regular hotel stay.</div>
+            <div class="membership-popup-text">
+              <ul>
+                <li>Extra Vacations<sup>SM</sup> Getaways give you many of the same spacious accommodations and amenities you expect from RCI exchange vacations but at member-only prices.</li>
+                <li>Everyday low prices start at $399<sup>USD</sup> per week, and you can take as many as you like—there's no limit.</li>
+                <li>Check your My Offers box when you sign in to <a ng-click="openUrl('http://www.rci.com')">RCI.com</a> for special offers!</li>
+              </ul>
+            </div></div>
+    </div>
+    
+      <!--<table cellpadding="10">
+        <tr>
+          <td class="membership-icon-column" align="left" valign="top"><img src="images/membership/icon_1_large.png">
+          <td class="membership-text-column" align="left" valign="top"><div class="membership-popup-title">Extra Vacations&#8480; Getaways</div>
+            <div class="membership-popup-subtitle">Vacation without exchanging when you book an Extra Vacations&#8480; Getaway&mdash;booked with cash as you would a regular hotel stay.</div>
+            <div class="membership-popup-text">
+              <ul>
+                <li>Extra Vacations<sup>SM</sup> Getaways give you many of the same spacious accommodations and amenities you expect from RCI exchange vacations but at member-only prices.</li>
+                <li>Everyday low prices start at $399<sup>USD</sup> per week, and you can take as many as you like—there's no limit.</li>
+                <li>Check your My Offers box when you sign in to <a ng-click="openUrl('http://www.rci.com')">RCI.com</a> for special offers!</li>
+              </ul>
+            </div>
+      </table>-->
+    </div>
+    <div id="membership-button-2" ng-if="pageNo == 2" class="membership-popup fade-animation">
+      <table>
+        <tr>
+          <td class="membership-icon-column"><img src="images/membership/icon_2_large.png">
+          <td class="membership-text-column"><div class="membership-popup-title">RCI® Cruise Vacations</div>
+            <div class="membership-popup-subtitle">Hitting the seas has never been more exciting!</div>
+            <div class="membership-popup-text">
+              <ul>
+                <li>Choose from thousands of RCI Cruise vacations with leading cruise lines, giving you the opportunity to visit some of the world's most inviting destinations and exciting ports of call.</li>
+                <li>Enjoy many dining choices (including late-night buffets and 24-hour room service), Vegas-style shows and onboard shopping, swimming, spas, casinos and more. See all available cruise vacations at <a ng-click="openUrl('http://www.cruiserci.com')">CruiseRCI.com</a>, or call an RCI Cruise Guide at 877-RCI-BOAT.**</li>
+              </ul>
+              <span class="membership-popup-comment"><sup>**</sup>&nbsp;&nbsp;<a ng-click="selectPage(10)">Tap here</a></span> </div>
+      </table>
+    </div>
+    <div id="membership-button-3" ng-if="pageNo == 3" class="membership-popup fade-animation">
+      <table>
+        <tr>
+          <td class="membership-icon-column"><img src="images/membership/icon_3_large.png">
+          <td class="membership-text-column"><div class="membership-popup-title">RCI® Travel<sup>1</sup></div>
+            <div class="membership-popup-subtitle">Who doesn't love great savings?</div>
+            <div class="membership-popup-text">
+              <ul>
+                <li>With RCI Travel, members receive great deals on flights, hotels, car rentals and more.</li>
+                <li>Plus, you get a Best Rate Guarantee<sup>2</sup>, which saves you the hassle of searching other online travel providers.</li>
+                <li>You'll also benefit from peace of mind when you book: If you find a lower rate within 24 hours of booking, you'll receive a full refund for the difference.</li>
+              </ul>
+              <span class="membership-popup-comment"><sup>1, 2</sup>&nbsp;&nbsp;<a ng-click="selectPage(11)">Tap here</a></span> </div>
+      </table>
+    </div>
+    <div id="membership-button-4" ng-if="pageNo == 4" class="membership-popup fade-animation">
+      <table>
+        <tr>
+          <td class="membership-icon-column"><img src="images/membership/icon_4_large.png">
+          <td class="membership-text-column"><div class="membership-popup-title">All-Inclusive Resort Vacations&#8308;</div>
+            <div class="membership-popup-subtitle"> Your RCI membership gives you access to high-quality all-inclusive resorts where one fixed price often includes your food, alcoholic and non-alcoholic drinks, taxes and gratuities&mdash;meaning that once you get to your resort, there's no guesswork and no hassle! </div>
+            <div class="membership-popup-text">
+              <ul>
+                <li>You can carry less cash, manage your vacation budget better and help avoid the risk of overspending.</li>
+                <li>All-inclusive resorts affiliated with RCI are located in many inviting destinations, particularly in Mexico and the Caribbean, where all-inclusive resorts are especially popular and many represent distinguished hotel brands.</li>
+              </ul>
+              <span class="membership-popup-comment"><sup>4</sup>&nbsp;&nbsp;<a ng-click="selectPage(12)">Tap here</a></span> </div>
+      </table>
+    </div>
+    <div id="membership-button-5" ng-if="pageNo == 5" class="membership-popup fade-animation">
+      <table>
+        <tr>
+          <td class="membership-icon-column"><img src="images/membership/icon_5_large.png">
+          <td class="membership-text-column"><div class="membership-popup-title">Last Call&#8480; Vacations</div>
+            <div class="membership-popup-subtitle">Up for a last-minute escape? Booked with cash, Last Call&#8480; Vacations are clearance-priced vacations typically available less than 45 days before the check-in date.</div>
+            <div class="membership-popup-text">
+              <ul>
+                <li>Be sure to check often: New destinations become available frequently.</li>
+              </ul>
+            </div>
+      </table>
+    </div>
+    <div id="membership-button-6" ng-if="pageNo == 6" class="membership-popup fade-animation">
+      <table>
+        <tr>
+          <td class="membership-icon-column"><img src="images/membership/icon_6_large.png">
+          <td class="membership-text-column"><div class="membership-popup-title">Exchange Vacations</div>
+            <div class="membership-popup-subtitle">As a core benefit of your RCI® subscribing membership, exchange vacations give you access to nearly 4,500 affiliated resorts around the world in more than 100 countries.<sup>*</sup></div>
+            <div class="membership-popup-text">
+              <ul>
+                <li>RCI's two exchange programs, RCI Weeks® and RCI Points®, provide plenty of flexibility in planning your hard-earned vacation time.</li>
+                <li>Explore new destinations with your vacation ownership by exchanging it for a variety of vacation types, and customize your trip so it meets your needs: Select when you go on vacation, choose your unit size, and more!</li>
+              </ul>
+            </div>
+            <div class="membership-popup-comment"> <sup>*</sup>&nbsp;&nbsp;These vacations are limited and subject to availability based on value-for-value exchange principles and your accessible Points balance. </div>
+      </table>
+    </div>
+    <div id="membership-button-7" ng-if="pageNo == 7" class="membership-popup fade-animation">
+      <table>
+        <tr>
+          <td class="membership-icon-column"><img src="images/membership/icon_7_large.png">
+          <td class="membership-text-column"><div class="membership-popup-title">RCI Platinum® Membership Tier</div>
+            <div class="membership-popup-subtitle">When you upgrade to the RCI Platinum® membership tier<sup>5</sup>, you receive a wide variety of benefits you can enjoy on vacation and at home&mdash;every day.</div>
+            <div class="membership-popup-text"> RCI Platinum members have access to additional exchange benefits, including opportunities for Unit Upgrades<sup>6</sup>, Priority Access<sup>7</sup> to select exchange vacations in highly sought-after destinations, access to a dedicated toll-free phone line, the ability to put a vacation on hold without a fee when you call an RCI Platinum membership vacation guide, and additional savings of $25<sup>USD</sup> per cabin with Platinum Cruise as compared to standard RCI membership<sup>8</sup>. </div>
+            <div class="membership-popup-comment" ng-click="selectPage(13)"> <sup>5, 6, 7, 8</sup>&nbsp;&nbsp;<a>Tap here</a> </div>
+      </table>
+    </div>
+    <div id="membership-button-8" ng-if="pageNo == 8" class="membership-popup fade-animation">
+      <table>
+        <tr>
+          <td class="membership-icon-column"><img src="images/membership/icon_8_large.png">
+          <td class="membership-text-column"><div class="membership-popup-title">RCI® Guest Certificates<sup>3</sup></div>
+            <div class="membership-popup-subtitle">You already know the value of an RCI® subscribing membership, so why not share it with friends and family?</div>
+            <div class="membership-popup-text">
+              <ul>
+                <li>For $59<sup>USD</sup>, purchase an RCI Guest Certificate and allow your guests to use your RCI exchange vacation&mdash;just like members!</li>
+                <li>RCI Guest Certificates can also be redeemed by your guests for Extra Vacations&#8480; Getaways and Last Call&#8480; Vacations.</li>
+              </ul>
+            </div>
+            <div class="membership-popup-comment"> <sup>3</sup> Guest certificate recipient must be at least 21 years of age. Certain fees and time restrictions may apply. </div>
+      </table>
+    </div>
+    <div id="membership-button-9" ng-if="pageNo == 9" class="fade-animation">
+      <table>
+        <tr>
+          <td class="membership-icon-column">
+          <td class="membership-comment-column"><div class="membership-popup-comment">
+              <p> <sup>5</sup> Certain benefits of RCI® Travel and the RCI Platinum® membership tier are provided by third parties, some of which may be initially or only available in the United States. RCI does not warrant the suitability or security of such benefits or the providers of such benefits. Information about such benefits is based on information obtained from the applicable providers. RCI is not responsible for, and shall have no liability for any inaccurate, incomplete or misleading information regarding products or services that are not provided directly by RCI. Additional terms, conditions and restrictions may apply to any such benefit, as determined solely by the applicable provider, and are subject to change at the sole discretion of the provider. </p>
+              <p> <sup>6</sup> Members with the earliest reservation will be given priority. If the member opts for a unit upgrade, the member will be responsible for additional resort-specific fees that may apply, based upon increased unit size. </p>
+              <p> <sup>7</sup> These vacations are limited. Destinations and travel times are subject to availability and confirmed on a first come, first served basis. Offer includes only accommodations and specifically excludes travel costs and other expenses that may be incurred. Taxes, additional fees and charges may apply. All-inclusive resorts may charge a mandatory all-inclusive fee. Other restrictions may apply. Offer void where prohibited by law. </p>
+              <p> <sup>8</sup> Available to RCI Subscribing Members with RCI Platinum membership tier benefits only. For RCI Cruise Terms and Conditions call 1-888-833-1336 or go to <a ng-click="openUrl('http://www.cruiserci.com/Terms')">www.cruiserci.com/Terms</a>. RCI Cruise is administered by International Cruise & Excursion Gallery, Inc. d/b/a Our Vacation Center and/or ICE with its principal place of business at 15501 N. Dial Blvd., Scottsdale, Arizona under contract with RCI, LLC. ICE Seller of Travel Information: California Seller of Travel SOT #2066521-50; Florida Seller of Travel Registration #ST-29452; Washington UBI # 602 443 155 001 0001; Hawaii Travel Agent TAR #5192. </p>
+            </div>
+      </table>
+    </div>
+    <div id="membership-button-10" ng-if="pageNo == 10" class="fade-animation">
+      <table>
+        <tr>
+          <td class="membership-icon-column">
+          <td class="membership-comment-column"><div class="membership-popup-comment">
+              <p> <sup>**</sup> Cruises are available for purchase by RCI® subscribing members only (i) at a reduced price with an exchange of a qualified Deposit or applicable Points, or (ii) without exchange (sometimes referred to as “Cruise Extra Vacations&#8480; getaways”). For RCI Cruise terms and conditions, call 1-877-RCI-BOAT or visit <a ng-click="openUrl('http://www.cruiserci.com')">cruiserci.com</a>. RCI Cruise is administered by International Cruise & Excursion Gallery, Inc. d/b/a Our Vacation Center and/or ICE with its principal place of business at 15501 N. Dial Blvd., Scottsdale, Arizona under contract with RCI, LLC. ICE Seller of Travel Information: California Seller of Travel SOT #2066521-50; Florida Seller of Travel Registration #ST-29452; Washington UBI # 602 443 155 001 0001; Hawaii Travel Agent TAR #5192. </p>
+            </div>
+      </table>
+    </div>
+    <div id="membership-button-11" ng-if="pageNo == 11" class="fade-animation">
+      <table>
+        <tr>
+          <td class="membership-icon-column">
+          <td class="membership-comment-column"><div class="membership-popup-comment">
+              <p> <sup>1</sup> Certain benefits of RCI® Travel and the RCI Platinum® membership tier are provided by third parties, some of which may be initially or only available in the United States. RCI does not warrant the suitability or security of such benefits or the providers of such benefits. Information about such benefits is based on information obtained from the applicable providers. RCI is not responsible for, and shall have no liability for any inaccurate, incomplete or misleading information regarding products or services that are not provided directly by RCI. Additional terms, conditions and restrictions may apply to any such benefit, as determined solely by the applicable provider, and are subject to change at the sole discretion of the provider. </p>
+              <p> <sup>2</sup> For terms and conditions for the RCI Travel Best Rate Guarantee, go to <a ng-click="openUrl('http://www.rci.com/BRG')">RCI.com/BRG</a>. </p>
+            </div>
+      </table>
+    </div>
+    <div id="membership-button-12" ng-if="pageNo == 12" class="fade-animation">
+      <table>
+        <tr>
+          <td class="membership-icon-column">
+          <td class="membership-comment-column"><div class="membership-popup-comment">
+              <p> <sup>4</sup> Depending on resort and season, all-inclusive fees may cover meals, drinks, tours, transportation, resort activities, resort amenities, services and facilities. Resorts with mandatory all-inclusive fees require the fees to be prepaid at or before check-in. A member may not be able to purchase food or drink at a resort if he or she chooses not to pay an optional all-inclusive fee. Fees, terms and conditions of packages covered by an all-inclusive fee are determined solely by the resort and are subject to change at any time.</p>
+            </div>
+      </table>
+    </div>
+    <div id="membership-button-13" ng-if="pageNo == 13" class="fade-animation">
+      <table>
+        <tr>
+          <td class="membership-icon-column">
+          <td class="membership-comment-column"><div class="membership-popup-comment">
+              <p> <sup>5</sup> Certain benefits of RCI® Travel and the RCI Platinum® membership tier are provided by third parties, some of which may be initially or only available in the United States. RCI does not warrant the suitability or security of such benefits or the providers of such benefits. Information about such benefits is based on information obtained from the applicable providers. RCI is not responsible for, and shall have no liability for any inaccurate, incomplete or misleading information regarding products or services that are not provided directly by RCI. Additional terms, conditions and restrictions may apply to any such benefit, as determined solely by the applicable provider, and are subject to change at the sole discretion of the provider. </p>
+              <p> <sup>6</sup> Members with the earliest reservation will be given priority. If the member opts for a unit upgrade, the member will be responsible for additional resort-specific fees that may apply, based upon increased unit size. </p>
+              <p> <sup>7</sup> These vacations are limited. Destinations and travel times are subject to availability and confirmed on a first come, first served basis. Offer includes only accommodations and specifically excludes travel costs and other expenses that may be incurred. Taxes, additional fees and charges may apply. All-inclusive resorts may charge a mandatory all-inclusive fee. Other restrictions may apply. Offer void where prohibited by law. </p>
+              <p> <sup>8</sup> Available to RCI Subscribing Members with RCI Platinum membership tier benefits only. For RCI Cruise Terms and Conditions call 1-888-833-1336 or go to <a ng-click="openUrl('http://www.cruiserci.com/Terms')">www.cruiserci.com/Terms</a>. RCI Cruise is administered by International Cruise & Excursion Gallery, Inc. d/b/a Our Vacation Center and/or ICE with its principal place of business at 15501 N. Dial Blvd., Scottsdale, Arizona under contract with RCI, LLC. ICE Seller of Travel Information: California Seller of Travel SOT #2066521-50; Florida Seller of Travel Registration #ST-29452; Washington UBI # 602 443 155 001 0001; Hawaii Travel Agent TAR #5192. </p>
+            </div>
+      </table>
+    </div>
+    <img class="membership-popup-close" src="images/membership/icon_close.png" ng-click="selectPage(0)" ng-if="pageNo != 0 && pageNo != 7 && pageNo != 9"> <img class="membership-popup-close" src="images/membership/icon_close_7.png" ng-click="pageNo == 9 ? selectPage(7) : selectPage(0)" ng-if="pageNo == 7 || pageNo == 9 || pageNo >= 10"> </div>
+</div>
+<div class="nav-left-bar" ng-style="{backgroundImage: 'url(images/page-left-black.png)', backgroundRepeat: 'repeat-y'}"></div>
+<div class="nav-right-bar" ng-style="{backgroundImage: 'url(images/page-right-black.png)', backgroundRepeat: 'repeat-y'}"></div>
+<img class="menu-button" src="images/menu.png" ng-click="$root.showMenu = true" ng-show="!$root.showMenu">

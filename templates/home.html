@@ -1,0 +1,63 @@
+<style>
+@media (max-width: 768px) {
+	#region-usa, #region-other{width:100%;}
+	.full-screen {
+    height: auto !important;
+	}
+}
+</style>
+<div id="home" class="page" ng-init="clear()"
+     hm-swipe-left="showRegion(findRegionById('gFzwc5gELO'), $root.config.ANIMATION_RIGHT_TO_LEFT)"
+     hm-swipe-right="showRCISubscribingMembershipPage($root.config.ANIMATION_LEFT_TO_RIGHT)"
+     ng-style="{'background-image':'url('+coverImage+')'}" ng-show="coverImage!=null">
+     <div class="wapper">
+    <div id="home-title">
+        <div id="home-title-inline">
+            <div id="home-title-text">RCI® DIRECTORY <span class="small">OF</span> AFFILIATED RESORTS</div>
+        </div>
+    </div>
+    <div id="home-jump">
+        <form>
+            <div id="home-jump-input">
+                <div><label for="resortIdInput" class="control-label">QUICK JUMP WITH RESORT ID#</label> <input
+                        type="text" maxlength="4" class="form-control" id="resortIdInput" placeholder="0000"
+                        style="text-transform:uppercase" ng-keyup="onResortIdKeyUp($event)" ng-model="model.resortId">
+                    <div id="error" ng-if="showError">Please enter a valid RCI Resort ID#</div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="home-regions" ng-show="regions.length > 0">
+        <div id="region-usa" class="pull-left">
+            <div class="region-title">UNITED STATES:</div>
+            <div ng-repeat="r in $root.config.REGIONS['usa']">
+                <div class="region-text"><a
+                        ng-click="showRegion(findRegionById(r.id))">{{regionIndexes[r.id].label}}</a></div>
+            </div>
+        </div>
+        <div id="region-other" class="pull-right">
+            <div class="region-title">CANADA, MEXICO, BERMUDA, <br>BAHAMAS & THE CARIBBEAN:</div>
+            <div ng-repeat="r in $root.config.REGIONS['america']">
+                <div class="region-text"><a
+                        ng-click="showRegion(findRegionById(r.id))">{{regionIndexes[r.id].label}}</a></div>
+            </div>
+            <br>
+            <div class="region-title">MORE INTERNATIONAL DESTINATIONS:</div>
+            <div ng-repeat="r in $root.config.REGIONS['international']">
+                <div class="region-text"><a
+                        ng-click="showRegion(findRegionById(r.id))">{{regionIndexes[r.id].label}}</a></div>
+            </div>
+        </div>
+    </div>
+    <img id="home-trademark" ng-src="{{$root.baseUrl + 'images/background/home_2.png'}}">
+    <div class="tag-cnt">
+     <img ng-src="{{$root.baseUrl + 'images/background/home_3.png'}}">
+	</div>
+</div>                                                                                               
+</div>
+
+<div class="nav-left-bar"
+     ng-style="{backgroundImage: 'url(images/page-left-black.png)', backgroundRepeat: 'repeat-y'}"></div>
+<div class="nav-right-bar"
+     ng-style="{backgroundImage: 'url(images/page-right-black.png)', backgroundRepeat: 'repeat-y'}"></div> <img
+        class="menu-button" src="images/menu.png" ng-click="$root.showMenu = true" ng-show="!$root.showMenu">
