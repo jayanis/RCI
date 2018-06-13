@@ -123,17 +123,21 @@ body, html{
 .region-resort-media{
 	height:auto;
 }
-#tap-for-detail-button {
-    padding-left: 50px;
-    width: 100%;
-    height: 40px;
-    max-width: 390px;
-}
-.offline #region-help {
+#region-help {
+    max-width: 300px;
     padding-top: 10px;
     padding-left: 50px;
-}		
-
+}
+#title-bar-text {
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: 200;
+    display: table;
+}
+.modal.fade.in {
+    left: 45%;
+}
 
 /* - min-width: 768 */
 @media (max-width: 768px) {
@@ -147,23 +151,109 @@ body, html{
 	}
 	#user-guide-1, #user-guide-2, #user-guide-3{
 	top: 0px;
-	left:20px;
+	left:20px;	
+	}
+	#region-resort .region-subregion-resort-list {
+    height: auto;
+	}
+}
+@media (max-width: 740px) {
+	#tap-for-detail-button {
+    padding-left: 30px;
+    width: 100%;
+    height: 40px;
+    max-width: 390px;
+}
+.modal.fade.in {
+    left: 20%;
+	text-align:center;
+	background: none;
+}
+/*.offline #region-help {
+    padding-top: 10px;
+    padding-left: 50px;
+}*/		
+#region-help {
+	width:100%;
+    max-width: 300px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+#region-resort-media {
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 20px;
+    /*height: auto;*/
+}
+#region-media {
+    max-width: 300px;
+    height: auto;
+    overflow-y: auto;
+	float:left !important;
+	padding-top:20px;
+}
+#title-bar-text {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
+}
+.circle {
+    width: 80px;
+    height: 80px;
+    margin-top: 0px;
+    margin-right: 20px;
+    -moz-border-radius: 54px;
+    -webkit-border-radius: 54px;
+    border-radius: 54px;
+    display: table;
+}
+.circle a {
+    font-size: 7px;
+	padding-top: 14px;
+}
+#area-info .content:nth-child(1) { width: 100%; }
+#area-info .content:nth-child(2) { width: 100%; }
+	.content, #area-info .content, #area-events .content {
+    padding-top: 10px;
+	padding-left: 20px;
+    padding-right: 20px;
+	/*height:auto;*/
+	}
+	#nav-content {
+    margin-top: 40px;
 	
 	}
+	#title-bar-text table {
+    padding-top: 35px;
+}
+#legal {
+    padding-left: 45px;
+    padding-right: 40px;
+    width: 100%;
+}
+.nav-right-bar, .nav-left-bar {
+    right: 0;
+    left: unset;
+    background: none !important;
+}
+	
 }
 @media (max-width: 685px) {
 	#tab-nav a {
-    min-height: 80px;
-	margin:auto;
+    min-height: 55px;
+    margin: auto;
+    line-height: 22px;
+	padding-top: 5px;
 	}
-	.content {
-    padding-top: 65px;
-	}
+	
 }
 @media (max-width: 420px) {
 	#home-title-text, #home-title-text .small{
 	 font-size:36px;
 	 text-shadow: 1px 1px 5px rgba(255, 255, 255, 1);
+	}
+	#tab-nav a {
+    font-size: 10px;
 	}
 	
 }

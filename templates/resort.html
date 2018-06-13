@@ -20,22 +20,24 @@
                 ng-click="showLocalInfo()"><img src="images/plus.png"></a></div>
         <div class="title-bar">
             <div id="title-bar-text" class="pull-left">
-                <table>
+                <table width="100%">
                     <tr>
-                        <td style="vertical-align: top" ng-if="isPointResort"><img class="blue-dot">
-                        <td><span ng-bind-html="title"></span><span class="resort-id">{{resortId}}</span>
+                        <td width="6%" align="left" valign="top" style="vertical-align: top" ng-if="isPointResort"><img class="blue-dot">
+                        <td width="70%" align="left" valign="top"><span ng-bind-html="title"></span><span class="resort-id">{{resortId}}</span>
+                        <td width="24%" rowspan="2" align="right" valign="top"> 
+                        <div class="pull-right circle" ng-style="{backgroundColor: region.color}" ng-hide="!online"
+                 style="text-align:middle"><a href="#" ng-click="showAvailability(resort.resortId)"> TAP TO CHECK
+                AVAILABILITY<br> <img src="images/hand.png"> </a></div>                                               
                     <tr>
-                        <td ng-if="isPointResort">
-                        <td>
+                        <td align="left" valign="top" ng-if="isPointResort">
+                        <td align="left" valign="top">
                             <div><img ng-if="!!strataIcon" ng-src="{{$root.baseUrl + 'images/rci/' + strataIcon}}"> <img
                                     ng-if="!!allInclusiveIcon"
                                     ng-src="{{$root.baseUrl + 'images/rci/' + allInclusiveIcon}}"></div>
-                </table>
+                        </table>
             </div>
-            <div class="pull-right circle" ng-style="{backgroundColor: region.color}" ng-hide="!online"
-                 style="text-align:middle"><a href="#" ng-click="showAvailability(resort.resortId)"> TAP TO CHECK
-                AVAILABILITY<br> <img src="images/hand.png"> </a></div>
-        </div>
+            
+      </div>
         <hr>
     </div>
     <div id="local-info" ng-show="showingLocalInfo">
