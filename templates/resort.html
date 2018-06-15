@@ -43,14 +43,14 @@
     <div id="local-info" ng-show="showingLocalInfo">
         <div id="readings">
             <div id="time" style="position:relative">
-                <div style="padding-top:10px"><h1>Local Time:</h1>
+                <div style="padding:10px 0"><h1>Local Time:</h1>
                     <div class="time">{{localTime|date:'shortTime'}}</div>
                     <div class="date">{{localTime|date:'longDate'}}</div>
                 </div>
                 <img src="images/close.png" style="position:absolute;right:10px;top:10px" ng-click="hideLocalInfo()">
             </div>
-            <div id="weather"> <!--    local weather   -->
-                <div class="column"><h1>Local Weather:</h1>
+            <div id="weather" class="row"> <!--    local weather   -->
+                <div class=" col-md-3"><h1>Local Weather:</h1>
                     <div class="weather">
                         <div style="height:45px" ng-if="localWeather.current"><img
                                 ng-src="images/weather/{{localWeather.current.icon}}.png"
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                 </div> <!--    average temps  -->
-                <div class="column"><h1>7-Day Forecast:</h1>
+                <div class=" col-md-7"><h1>7-Day Forecast:</h1>
                     <div class="weather weekly">
                         <div ng-repeat="forecast in localWeather.forecast.data" ng-if="!$first"><h1>
                             {{forecast.time*1000|date:'EEE':localWeather.timezone}}</h1>
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                 </div> <!--    share   -->
-                <div class="column">
+                <div class=" col-md-2">
                     <div class="circle" ng-style="{backgroundColor: region.color}" ng-hide="!online"
                          style="text-align:middle;margin:10% auto"><a href="#"
                                                                       ng-click="showAvailability(resort.resortId)"> TAP
@@ -117,7 +117,7 @@
                 ng-click="showTab($root.config.RESORT_TAB_AREA_EVENTS)">EVENTS</a></div>
     </div>
     <div id="nav-content" ontouchmove="onTouchMove(event)"
-         ng-style="{'height': (720 - ($root.showOfflinePrompt && !online ? 40 : 0) - (showingLocalInfo ? 450 : 0)) + 'px'}">
+         ng-style="{'height': (320 - ($root.showOfflinePrompt && !online ? 40 : 0) - (showingLocalInfo ? 450 : 0)) + 'px'}">
         <ng-include src="$root.baseUrl + 'templates/' + tab + '.html'"></ng-include>
     </div>
     <div id="overlay"

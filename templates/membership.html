@@ -1,10 +1,11 @@
-<div id="membership" class="page" ng-controller="MembershipController" 
+<div id="membership" class="page"  ng-controller="MembershipController" 
 hm-swipe-left="showHome($root.config.ANIMATION_RIGHT_TO_LEFT)" 
-hm-swipe-right="showUserGuidePage($root.config.ANIMATION_LEFT_TO_RIGHT)"> 
+hm-swipe-right="showUserGuidePage($root.config.ANIMATION_LEFT_TO_RIGHT)" > 
 <img src="images/membership/banner.png" style="width:100%;">
+<div >
   <div id="membership-title">Get More With RCI</div>
   <div id="membership-description"> RCI gives you access to more vacation experiences, more travel options and more flexibility in planning and booking your trip. It all adds up to even more value from your RCI® subscribing membership! Here are just some of the vacation opportunities and membership benefits you can take advantage of—<i>because your vacation means the world to us.®</i></div>
-  <div id="membership-buttons">
+  <div id="membership-buttons" >
   <div id="membership-button-0" class="facility_Box"  ng-if="pageNo == 0">
   <div class="row">
   	<div class="col-sm-3 col-xs-6">
@@ -293,6 +294,7 @@ hm-swipe-right="showUserGuidePage($root.config.ANIMATION_LEFT_TO_RIGHT)">
       </table>
     </div>
     <img class="membership-popup-close" src="images/membership/icon_close.png" ng-click="selectPage(0)" ng-if="pageNo != 0 && pageNo != 7 && pageNo != 9"> <img class="membership-popup-close" src="images/membership/icon_close_7.png" ng-click="pageNo == 9 ? selectPage(7) : selectPage(0)" ng-if="pageNo == 7 || pageNo == 9 || pageNo >= 10"> </div>
+</div>
 </div>
 <div class="nav-left-bar" ng-style="{backgroundImage: 'url(images/page-left-black.png)', backgroundRepeat: 'repeat-y'}"></div>
 <div class="nav-right-bar" ng-style="{backgroundImage: 'url(images/page-right-black.png)', backgroundRepeat: 'repeat-y'}"></div>

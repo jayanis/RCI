@@ -137,6 +137,7 @@ body, html{
 }
 .modal.fade.in {
     left: 45%;
+	background: none;
 }
 
 /* - min-width: 768 */
@@ -165,7 +166,7 @@ body, html{
     max-width: 390px;
 }
 .modal.fade.in {
-    left: 20%;
+    left: 10%;
 	text-align:center;
 	background: none;
 }
@@ -195,7 +196,7 @@ body, html{
 #title-bar-text {
     width: 100%;
     height: 100%;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 .circle {
     width: 80px;
@@ -236,7 +237,24 @@ body, html{
     left: unset;
     background: none !important;
 }
-	
+#local-info #readings{
+	height:auto;	
+}
+.regions-buttons-text{
+	font-size:14px;	
+}
+#membership-title {
+    padding: 13px 10px 0 10px;	
+	line-height: 62px;
+}
+#home-jump-input input{
+	background-color: rgba(255, 255, 255, 0.4);
+	}
+#home-jump-input input {
+    font-weight: 550;
+	    text-align: center;
+}
+
 }
 @media (max-width: 685px) {
 	#tab-nav a {
@@ -265,10 +283,11 @@ body, html{
 	#home-jump-input input{
 		margin: 0 auto;
 	float: none;
+	background-color: rgba(255, 255, 255, 0.4);
 	}
 	#home-regions {
     height: 100%;
-    padding-top: 360px;
+    padding-top: 260px;
 	}
 }
 @media (min-width: 2500px) {
