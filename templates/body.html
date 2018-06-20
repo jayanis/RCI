@@ -1,0 +1,61 @@
+<div id="body-content">
+    <div id="page-content" class="full-screen" ng-include="$root.baseUrl + 'templates/' + $root.currentPage"
+         onload="onPageLoaded()" ng-cloak></div>
+</div>
+<script type="text/ng-template" id="alert-modal-window">
+    <div
+    class="modal-body">{{message}}</div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="ok()">OK</button>
+    </div></script>
+    <div ontouchmove="onTouchMove(event)" style="height:700px">
+<div id="menu" class="page" ng-if="$root.showMenu"><img class="menu-button-close"
+                                                                                             src="images/close-bg.png"
+                                                                                             ng-click="$root.showMenu = false">
+    <header>
+        <div id="nav-buttons" style="margin-right: 0px;margin-left: 0px;"class="row">
+            <div class="col-sm-2 col-sm-offset-1"><a href="goto://ApplicationViewState/library">
+                <div class="icon"><img src="images/menu/library.png"></div>
+                <span>Library</span> </a></div>
+            <div class="col-sm-2" ng-click="hideMenu(); showCoverPage()">
+                <div class="icon"><img src="images/menu/cover.png"></div>
+                <span>Cover</span></div>
+            <div class="col-sm-2" ng-click="hideMenu(); showUserGuidePage()">
+                <div class="icon"><img src="images/menu/help.png"></div>
+                <span>Help</span></div>
+            <div class="col-sm-2" ng-click="hideMenu(); showRCISubscribingMembershipPage()">
+                <div class="icon"><img src="images/menu/membership.png"></div>
+                <span>My Membership</span></div>
+            <div class="col-sm-2"><a
+                    href="mailto:digitaldirectoryfeedback@rci.com?subject=Digital%20Directory-Beta%20Feedback">
+                <div class="icon"><img src="images/menu/comment.png"></div>
+                <span>Comment</span> </a></div>
+        </div>
+    </header>
+    <main>
+        <div class="row">
+            <div id="regions-buttons" class="col-sm-8 col-sm-offset-2">
+                <div class="regions-buttons-title">Regions</div>
+                <hr>
+                <div class="regions-buttons-subtitle">United States:</div>
+                <div ng-repeat="r in $root.config.REGIONS['usa']" class="regions-buttons-text"
+                     ng-click="hideMenu(); showRegion(findRegionById(r.id), null, true)"> {{regionIndexes[r.id].label}}
+                </div>
+                <hr>
+                <div class="regions-buttons-subtitle">Canada, Mexico, Bermuda, Bahamas & The Caribbean:</div>
+                <div ng-repeat="r in $root.config.REGIONS['america']" class="regions-buttons-text"
+                     ng-click="hideMenu(); showRegion(findRegionById(r.id), null, true)"> {{regionIndexes[r.id].label}}
+                </div>
+                <hr>
+                <div class="regions-buttons-subtitle">More International Destinations:</div>
+                <div ng-repeat="r in $root.config.REGIONS['international']" class="regions-buttons-text"
+                     ng-click="hideMenu(); showRegion(findRegionById(r.id), null, true)"> {{regionIndexes[r.id].label}}
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div ng-click="hideMenu(); showLegalPage()">Disclosures, Terms and Conditions</div>
+    </footer>
+</div>
+</div>

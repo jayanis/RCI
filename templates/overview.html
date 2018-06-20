@@ -1,0 +1,17 @@
+<div id="resort-overview">
+    <div class="pull-left text-column">
+        <div class="content"><p>{{overview}}</p> <br>
+            <p ng-bind-html="address"></p> <br>
+            <div ng-if="hasRCI" ng-click="$root.playVideo(video)">
+                <div id="rci_image" class="pull-left"><img ng-src="{{$root.baseUrl + 'images/rci/tv.png'}}"></div>
+                <div id="rci_text" class="pull-left"><b>DISCOVER MORE ABOUT THIS RESORT ON RCI® TV</b></div>
+            </div>
+        </div>
+    </div>
+    <div class="pull-right image-column"><img ng-src="{{$root.config.RESORT_IMAGE_V3_URL+ id + '/images?'+ $root.config.V3_ACCESS_TOKEN}}"
+                                              ng-error="onLoadImage1Error($event)"
+                                              ng-show="false">
+        <div style="height: 2px"></div>
+        <img ng-if="showSecondImage" ng-src="{{$root.config.RESORT_IMAGE_URL + id + 'B.jpg'}}"
+             ng-error="onLoadImage2Error($event)"></div>
+</div>

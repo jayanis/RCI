@@ -1,0 +1,102 @@
+<div class="row">
+<div class="col-md-12">
+<div id="region" class="page" style="height:auto;" ng-style="{'background-color': region.color}" hm-swipe-left="nextRegion()"
+     hm-swipe-right="previousRegion()" hm-swipe-down="showRegionFromList($root.config.ANIMATION_UP_TO_DOWN)"
+     ng-controller="RegionController" ng-init="init()" ng-cloak>
+    <div id="offline-prompt" ng-show="$root.showOfflinePrompt && !online">
+        <div class="pull-left">YOU ARE VIEWING THE OFFLINE EDITION. PLEASE CONNECT TO THE WEB TO GET THE LATEST INFO.
+        </div>
+        <div class="pull-right" ng-click="$root.showOfflinePrompt = false">
+            <div><span>GOT IT</span> <img src="images/close.png"></div>
+        </div>
+    </div>
+    <div id="nav-content" ontouchmove="onTouchMove(event)" style="height:700px; margin-top:0px">
+    <div id="region-map" class="map" ng-if="online">
+        <div map max-bounds="regionBounds" resorts="resorts" fit-to-markers="true" focus="resort"
+             on-select-resort="selectResortMapMarker(data)"></div>
+    </div>
+    <div id="tap-for-detail-button" ng-click="showRegionHelp = !showRegionHelp">
+        <hr>
+        <div class="pull-left"><img class="icon-expand" ng-show="!showRegionHelp"> <img class="icon-collapse" ng-show="showRegionHelp">
+            <div class="region-help-button">TAP FOR<br>DETAILS</div>
+        </div>
+    </div>
+    <div id="region-help">
+                <hr ng-if="showRegionHelp">
+                <div class="region-help-text" ng-if="showRegionHelp">Information may have changed since publication.
+                    Please confirm details before planning your trip. The information provided in this Directory
+                    relating to local businesses, services and entertainment is for your convenience only. RCI has no
+                    affiliation, association, or relationship with any of the featured vendors, and each vendor is
+                    solely responsible for the product or service it provides. RCI does not endorse any of the
+                    affiliated resort activities, guides, vendors, or service providers described. It is the
+                    individual’s responsibility to investigate the safety and suitability of any activity and the
+                    credentials and fitness of any guide, vendor, or service provider. RCI expressly denies any
+                    liability for engaging in any activity and for using any guide, vendor or service provider that may
+                    be mentioned or described in this Directory. Additional fees and restrictions may apply to any
+                    activity or service.
+                </div>
+            </div>
+    <div id="region-resort-media">
+        <div id="region-resort" class="pull-left">
+            <div class="region-title-bar">
+                <div class="region-title">RCI® Affiliated Resorts</div>
+                <hr>
+                <div class="region-subtitle">TAP A LISTING BELOW TO VIEW A RESORT</div>
+            </div>
+            <div class="region-subregion-resort-list" >
+                <table>
+                    <tr ng-repeat="sb in region.children">
+                        <td class="sub-region-icon-column" ng-click="toggleResortList(sb)"><img class="icon-expand"
+                                                                                                ng-show="!sb.showResorts">
+                            <img class="icon-collapse" ng-show="sb.showResorts">
+                        <td class="sub-region-text-column">
+                            <div class="sub-region-title"><a ng-click="toggleResortList(sb)">{{sb.label + (sb.subtitle ?
+                                ' ' + sb.subtitle : '')}}</a></div>
+                            <div class="sub-region-resort row" ng-repeat="r in sb.children" ng-if="sb.showResorts"
+                                 ng-click="showResort(r.resortId)">
+                                <div class="resort-id col-sm-2">{{r.rciResortId}}</div>
+                                <div class="resort-name col-sm-10">{{r.name}}</div>
+                            </div>
+                </table>
+            </div>
+        </div>
+
+        <div id="region-media">
+            <div class="region-title-bar" ng-show="online">
+                <div class="region-title">Articles, Videos and More</div>
+                <hr>
+                <div class="region-subtitle">TAP CONTENT BELOW TO VIEW</div>
+            </div>
+            <div ng-show="online">
+                <div id="region-media-list">
+                    <table>
+                        <tbody>
+                        <tr ng-repeat="p in region.essentialPhrases" ng-click="showEssentialPhrases(p)">
+                            <td class="sub-region-icon-column"><img class="icon-phrases">
+                            <td class="sub-region-text-column">
+                                <div class="sub-region-title">{{p.language}}</div>
+                        <tr ng-repeat="v in region.videos" ng-click="$root.playVideo(v.url)">
+                            <td class="sub-region-icon-column"><img class="icon-video">
+                            <td class="sub-region-text-column">
+                                <div class="sub-region-title">{{v.label}}</div>
+                        <tr ng-repeat="a in region.articles" ng-click="showArticle(a)">
+                            <td class="sub-region-icon-column"><img class="icon-article">
+                            <td class="sub-region-text-column">
+                                <div class="sub-region-title">{{a.label}}</div>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+<div class="nav-left-bar" ng-style="{backgroundImage: 'url(images/page-left-white.png)', backgroundRepeat: 'repeat-y'}"
+     ng-if="showPreviousRegion"></div>
+<div class="nav-right-bar"
+     ng-style="{backgroundImage: 'url(images/page-right-white.png)', backgroundRepeat: 'repeat-y'}"
+     ng-if="showNextRegion"></div> <img class="menu-button" src="images/menu.png" ng-click="$root.showMenu = true"
+                                        ng-show="!$root.showMenu">
+
+</div>
+</div>
